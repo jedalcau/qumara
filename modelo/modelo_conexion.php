@@ -7,9 +7,9 @@
 		public $conexion;
 		public function __construct(){
 		    $this->servidor = "localhost";
-			$this->usuario = "root";
-			$this->contrasena = "";
-			$this->basedatos = "bd_historial";
+			$this->usuario = "usr_qumara";
+			$this->contrasena = "pass_qumara";
+			$this->basedatos = "db_qumara";
 		}
 		function conectar(){
 			$this->conexion = new mysqli($this->servidor,$this->usuario,$this->contrasena,$this->basedatos);

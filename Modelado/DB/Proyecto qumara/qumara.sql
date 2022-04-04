@@ -1,5 +1,6 @@
 -- CREACION DE BASE DE DATOS
 CREATE DATABASE db_qumara;
+CREATE DATABASE db_historial;
 
 -- CREACION DE USUARIO
 CREATE USER 'usr_qumara'@'localhost' IDENTIFIED BY 'pass_qumara';

@@ -1,6 +1,6 @@
 
 <?php
-$mysqli = new mysqli('localhost', 'root', '', 'curso');
+$mysqli = new mysqli('localhost', 'usr_qumara', 'pass_qumara', 'db_qumara');
 
 
 /*
