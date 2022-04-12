@@ -1,27 +1,26 @@
--- MariaDB dump 10.19  Distrib 10.7.3-MariaDB, for Linux (x86_64)
---
--- Host: 127.0.0.1    Database: hospital
--- ------------------------------------------------------
--- Server version	10.7.3-MariaDB
+/*
+ Navicat Premium Data Transfer
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+ Source Server         : Localhost
+ Source Server Type    : MariaDB
+ Source Server Version : 100513
+ Source Host           : 127.0.0.1:3306
+ Source Schema         : db_qumara
 
---
--- Table structure for table `atencion`
---
+ Target Server Type    : MariaDB
+ Target Server Version : 100513
+ File Encoding         : 65001
 
+ Date: 11/04/2022 20:44:23
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for atencion
+-- ----------------------------
 DROP TABLE IF EXISTS `atencion`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `atencion` (
   `idatencion` int(11) NOT NULL AUTO_INCREMENT,
   `numhistoria` varchar(20) DEFAULT NULL,
@@ -41,16 +40,18 @@ CREATE TABLE `atencion` (
   KEY `fk_atencion_paciente_idx` (`idpaciente`),
   CONSTRAINT `fk_atencion_doctor` FOREIGN KEY (`iddoc`) REFERENCES `doctor` (`iddoc`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_atencion_paciente` FOREIGN KEY (`idpaciente`) REFERENCES `paciente` (`idpac`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Table structure for table `citas`
---
+-- ----------------------------
+-- Records of atencion
+-- ----------------------------
+BEGIN;
+COMMIT;
 
+-- ----------------------------
+-- Table structure for citas
+-- ----------------------------
 DROP TABLE IF EXISTS `citas`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `citas` (
   `idcitas` int(11) NOT NULL AUTO_INCREMENT,
   `codcita` varchar(20) NOT NULL,
@@ -72,45 +73,36 @@ CREATE TABLE `citas` (
   CONSTRAINT `fk_citas_consultorio` FOREIGN KEY (`idconsultorio`) REFERENCES `consultorio` (`idconsultorio`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_citas_doctor` FOREIGN KEY (`iddoctor`) REFERENCES `doctor` (`iddoc`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_citas_paciente` FOREIGN KEY (`idpaciente`) REFERENCES `paciente` (`idpac`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Table structure for table `consultorio`
---
+-- ----------------------------
+-- Records of citas
+-- ----------------------------
+BEGIN;
+COMMIT;
 
+-- ----------------------------
+-- Table structure for consultorio
+-- ----------------------------
 DROP TABLE IF EXISTS `consultorio`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `consultorio` (
   `idconsultorio` int(11) NOT NULL AUTO_INCREMENT,
   `consultorio` varchar(200) NOT NULL,
   `descripcion` varchar(255) NOT NULL,
   `status` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`idconsultorio`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `consultorio`
---
+-- ----------------------------
+-- Records of consultorio
+-- ----------------------------
+BEGIN;
+COMMIT;
 
-LOCK TABLES `consultorio` WRITE;
-/*!40000 ALTER TABLE `consultorio` DISABLE KEYS */;
-INSERT INTO `consultorio` VALUES
-(1,'DENTAL','CONSULTORIO DENTAL',1),
-(2,'MEDICINA GENERAL','MEDICINA GENERAL',1),
-(7,'GINECOLOGIA','PARA MUJERES',1),
-/*!40000 ALTER TABLE `consultorio` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `doctor`
---
-
+-- ----------------------------
+-- Table structure for doctor
+-- ----------------------------
 DROP TABLE IF EXISTS `doctor`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `doctor` (
   `iddoc` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(80) NOT NULL,
@@ -132,16 +124,18 @@ CREATE TABLE `doctor` (
   `oculto` int(11) DEFAULT 0,
   `firma` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`iddoc`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Table structure for table `educacion`
---
+-- ----------------------------
+-- Records of doctor
+-- ----------------------------
+BEGIN;
+COMMIT;
 
+-- ----------------------------
+-- Table structure for educacion
+-- ----------------------------
 DROP TABLE IF EXISTS `educacion`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `educacion` (
   `ideducacion` int(11) NOT NULL AUTO_INCREMENT,
   `iddoc` int(11) NOT NULL,
@@ -151,17 +145,18 @@ CREATE TABLE `educacion` (
   PRIMARY KEY (`ideducacion`),
   KEY `fk_educacion_doctor_idx` (`iddoc`),
   CONSTRAINT `fk_educacion_doctor` FOREIGN KEY (`iddoc`) REFERENCES `doctor` (`iddoc`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- ----------------------------
+-- Records of educacion
+-- ----------------------------
+BEGIN;
+COMMIT;
 
---
--- Table structure for table `empleado`
---
-
+-- ----------------------------
+-- Table structure for empleado
+-- ----------------------------
 DROP TABLE IF EXISTS `empleado`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `empleado` (
   `idempleado` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(60) NOT NULL,
@@ -173,16 +168,18 @@ CREATE TABLE `empleado` (
   `status` tinyint(1) NOT NULL DEFAULT 1,
   `feccreate` datetime DEFAULT NULL,
   PRIMARY KEY (`idempleado`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Table structure for table `experiencia`
---
+-- ----------------------------
+-- Records of empleado
+-- ----------------------------
+BEGIN;
+COMMIT;
 
+-- ----------------------------
+-- Table structure for experiencia
+-- ----------------------------
 DROP TABLE IF EXISTS `experiencia`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `experiencia` (
   `idexperiencia` int(11) NOT NULL AUTO_INCREMENT,
   `iddoc` int(11) NOT NULL,
@@ -194,16 +191,18 @@ CREATE TABLE `experiencia` (
   PRIMARY KEY (`idexperiencia`),
   KEY `fk_experiencia_doctor_idx` (`iddoc`),
   CONSTRAINT `fk_experiencia_doctor` FOREIGN KEY (`iddoc`) REFERENCES `doctor` (`iddoc`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Table structure for table `historiaclinica`
---
+-- ----------------------------
+-- Records of experiencia
+-- ----------------------------
+BEGIN;
+COMMIT;
 
+-- ----------------------------
+-- Table structure for historiaclinica
+-- ----------------------------
 DROP TABLE IF EXISTS `historiaclinica`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `historiaclinica` (
   `idhc` int(11) NOT NULL AUTO_INCREMENT,
   `numhistclinica` varchar(45) DEFAULT NULL,
@@ -261,16 +260,18 @@ CREATE TABLE `historiaclinica` (
   CONSTRAINT `fk_historiaclinica_consultorio` FOREIGN KEY (`idconsultorio`) REFERENCES `consultorio` (`idconsultorio`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_historiaclinica_doctor` FOREIGN KEY (`iddoctor`) REFERENCES `doctor` (`iddoc`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_historiaclinica_paciente` FOREIGN KEY (`idpaciente`) REFERENCES `paciente` (`idpac`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Table structure for table `login`
---
+-- ----------------------------
+-- Records of historiaclinica
+-- ----------------------------
+BEGIN;
+COMMIT;
 
+-- ----------------------------
+-- Table structure for login
+-- ----------------------------
 DROP TABLE IF EXISTS `login`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `login` (
   `idlogin` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(20) NOT NULL,
@@ -281,27 +282,19 @@ CREATE TABLE `login` (
   `activo` tinyint(4) NOT NULL DEFAULT 1,
   `idadmin` int(11) DEFAULT 0,
   PRIMARY KEY (`idlogin`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `login`
---
+-- ----------------------------
+-- Records of login
+-- ----------------------------
+BEGIN;
+INSERT INTO `login` (`idlogin`, `username`, `passwd`, `iddoctor`, `idpersonal`, `nivel`, `activo`, `idadmin`) VALUES (1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 0, 1, 1, 1, 1);
+COMMIT;
 
-LOCK TABLES `login` WRITE;
-/*!40000 ALTER TABLE `login` DISABLE KEYS */;
-INSERT INTO `login` VALUES
-(1,'admin','21232f297a57a5a743894a0e4a801fc3',0,1,1,1,1);
-/*!40000 ALTER TABLE `login` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `paciente`
---
-
+-- ----------------------------
+-- Table structure for paciente
+-- ----------------------------
 DROP TABLE IF EXISTS `paciente`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `paciente` (
   `idpac` int(11) NOT NULL AUTO_INCREMENT,
   `dni` varchar(11) NOT NULL,
@@ -320,5 +313,12 @@ CREATE TABLE `paciente` (
   `status` tinyint(1) DEFAULT NULL,
   `fecCreate` datetime DEFAULT NULL,
   PRIMARY KEY (`idpac`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of paciente
+-- ----------------------------
+BEGIN;
+COMMIT;
+
+SET FOREIGN_KEY_CHECKS = 1;

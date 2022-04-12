@@ -17,6 +17,9 @@ SHOW DATABASES;
 -- CREACION DE BASE DE DATOS
 CREATE DATABASE db_qumara;
 
+-- ELIMINAR BASE DE DATOS
+DROP DATABASE db_qumara;
+
 -- CREACION DE USUARIO
 CREATE USER 'usr_qumara'@'localhost' IDENTIFIED BY 'pass_qumara';
 
@@ -29,4 +32,34 @@ FLUSH PRIVILEGES;
 -- SELECCION DE BASE DE DATOS
 USE db_qumara;
 
-SELECT * FROM mysql.user;
+SHOW TABLES;
+
+TRUNCATE db_qumara.citas;
+
+SELECT * FROM atencion;
+SELECT * FROM citas;
+SELECT * FROM consultorio;
+SELECT * FROM doctor;
+SELECT * FROM educacion;
+SELECT * FROM empleado;
+SELECT * FROM experiencia;
+SELECT * FROM historiaclinica;
+SELECT * FROM login;
+SELECT * FROM paciente;
+
+SET FOREIGN_KEY_CHECKS = 0;
+
+TRUNCATE atencion;
+TRUNCATE paciente;
+TRUNCATE educacion;
+TRUNCATE empleado;
+TRUNCATE experiencia;
+TRUNCATE db_qumara.historiaclinica;
+TRUNCATE db_qumara.doctor;
+TRUNCATE consultorio;
+TRUNCATE login;
+
+SET FOREIGN_KEY_CHECKS =1;
+
+INSERT INTO `login` VALUES
+(1,'admin','21232f297a57a5a743894a0e4a801fc3',0,1,1,1,1);

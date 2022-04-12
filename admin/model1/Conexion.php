@@ -7,9 +7,9 @@ class Conexion
 	function __construct()
 	{
 		$host = "localhost";
-        $user = "root";
-        $pass = "jedalcau";
-        $db   = "db_pias";
+        $user = "usr_qumara";
+        $pass = "pass_qumara";
+        $db   = "db_qumara";
 
         $this->conn = new mysqli($host, $user, $pass, $db);
 
