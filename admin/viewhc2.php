@@ -371,7 +371,7 @@ $hc = $consulta->HistoriaClinica($idhc);
 
     
 <?php 
-include "footer.html"; 
+include "footer.php";
 }else{
     header("Location: ../index.html");
 }

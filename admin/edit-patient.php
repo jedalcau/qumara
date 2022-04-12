@@ -146,4 +146,4 @@ $pac = $pacientes->MostrarPaciente($idpac);
         </div>
     </div>
 
-<?php include "footer.html"; ?>
+<?php include "footer.php"; ?>

@@ -23,7 +23,7 @@ $doctores = new Doctores();
 $response = $doctores->Guardar($nombre,$apellidos,$username,$email,$passwd,$fecnac,$sexo,$direccion,$departamento,$provincia,$distrito,$profesion,$telefono,$avatar,$biografica,$status,$numcolegiatura);
 
 if($response == true){
-	header("Location: ../admin/doctors.php?msg=Guardado correctamente");
+	header("Location: ../admin/personal_salud.php?msg=Guardado correctamente");
 }else{
-	header("Location: ../admin/doctors.php?msg=Hubo un error");
+	header("Location: ../admin/personal_salud.php?msg=Hubo un error");
 }

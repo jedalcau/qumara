@@ -67,4 +67,4 @@ $data = $consulta->ListaHistoriaClinica($idpaciente);
         </div>
     </div>
 
-<?php include "footer.html"; ?>
+<?php include "footer.php"; ?>

@@ -29,14 +29,14 @@ if($duplicado == 2){
 	$response = $doctor->Guardar($nombre,$apellidos,$email,$fecnac,$sexo,$numcolegiatura,$direccion,$departamento,$provincia,$distrito,$profesion,$telefono,$avatar,$biografica,$status);	
 	
 	if($response == true){
-		header("Location: ../doctors.php?msg=1");
+		header("Location: ../personal_salud.php?msg=1");
 	}else{
-		header("Location: ../doctors.php?msg=3");
+		header("Location: ../personal_salud.php?msg=3");
 	}
 }
 
 if($duplicado == 1){
 	
-	header("Location: ../doctors.php?msg=2");
+	header("Location: ../personal_salud.php?msg=2");
 	
 }

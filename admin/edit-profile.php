@@ -219,7 +219,7 @@ if(isset($_SESSION['administrator']))
 
 
 <?php
-include "footer.html";
+include "footer.php";
 }else{
     header("Location: ../index.html");
 }

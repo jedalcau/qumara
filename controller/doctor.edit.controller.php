@@ -23,7 +23,7 @@ $doctores = new Doctores();
 $response = $doctores->Actualizar($iddoc,$nombre,$apellidos,$username,$email,$passwd,$fecnac,$sexo,$direccion,$departamento,$provincia,$distrito,$profesion,$telefono,$avatar,$biografica,$numcolegiatura);
 
 if($response == true){
-	header("Location: ../view/doctors.php?msg=3");
+	header("Location: ../view/personal_salud.php?msg=3");
 }else{
-	header("Location: ../view/doctors.php?msg=2");
+	header("Location: ../view/personal_salud.php?msg=2");
 }

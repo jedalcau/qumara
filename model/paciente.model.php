@@ -128,6 +128,8 @@ class Pacientes
 		$data = $this->conn->ConsultaArray($sql);
 		return $data;
 	}
+
+
 }
 
 /*

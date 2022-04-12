@@ -1,14 +1,12 @@
 <?php
-session_start();
-include "header.php";
-@$mensaje = $_REQUEST['msg'];
+    session_start();
+    include "header.php";
+    @$mensaje = $_REQUEST['msg'];
 
-require "../model/citas.model.php";
+    require "../model/citas.model.php";
 
-$citas = new Citas();
-$listcitas = $citas->Buscartodos();
-
-
+    $citas = new Citas();
+    $listcitas = $citas->Buscartodos();
 ?>
         <div class="page-wrapper">
             <div class="content">
@@ -160,4 +158,4 @@ $listcitas = $citas->Buscartodos();
 		</div>
     </div>
 
-<?php include "footer.html"; ?>
+<?php include "footer.php"; ?>

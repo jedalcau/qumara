@@ -124,7 +124,7 @@ if(isset($_SESSION['administrator']))
 </div>
 
 <?php 
-include "footer.html"; 
+include "footer.php";
 }else{
     header("Location: ../index.html");
 }

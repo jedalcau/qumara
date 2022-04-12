@@ -156,7 +156,7 @@ $doc = $doctores->Mostrardoctor($iddoc);
     </div>
     
 <?php 
-include "footer.html"; 
+include "footer.php";
 }else{
     header("Location: ../index.html");
 }

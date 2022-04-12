@@ -17,7 +17,7 @@ $data = $consultorio->Buscartodos();
                         <h4 class="page-title">Consultorios</h4>
                     </div>
                     <div class="col-sm-7 col-7 text-right m-b-30">
-                        <a href="add-department.php" class="btn btn-primary">Agregar consultorio</a>
+                        <a href="add-consultorio.php" class="btn btn-primary">Agregar consultorio</a>
                     </div>
                 </div>
               
@@ -131,7 +131,7 @@ $data = $consultorio->Buscartodos();
     </div>
 
 <?php 
-include "footer.html"; 
+include "footer.php";
 }else{
     header("Location: ../index.html");
 }

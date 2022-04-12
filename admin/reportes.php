@@ -120,5 +120,5 @@ include "header.php";
     </script>  
 
 <?php
-include "footer.html"; 
+include "footer.php";
 ?>

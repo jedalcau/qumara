@@ -9,7 +9,7 @@ $consult = new Consultorio();
 $response = $consult->Guardar($consultorio,$descripcion,$status);
 
 if($response == true){
-	header("Location: ../admin/departments.php?msg=1");
+	header("Location: ../admin/consultorio.php?msg=1");
 }else{
-	header("Location: ../admin/departments.php?msg=2");
+	header("Location: ../admin/consultorio.php?msg=2");
 }

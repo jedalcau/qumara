@@ -10,7 +10,7 @@ $doctores = new Doctores();
 $response = $doctores->ChangeLogin($iddoc,$username,$passwd);
 
 if($response == true){
-	header("Location: ../admin/doctors.php?msg=4");
+	header("Location: ../admin/personal_salud.php?msg=4");
 }else{
-	header("Location: ../admin/doctors.php?msg=2");
+	header("Location: ../admin/personal_salud.php?msg=2");
 }

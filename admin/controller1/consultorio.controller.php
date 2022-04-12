@@ -11,7 +11,7 @@ $response = $consult->Editar($idconsultorio,$consultorio,$descripcion,$status);
 
 if($response == true){
 	
-	header("Location: ../departments.php?msg=1");
+	header("Location: ../consultorio.php?msg=1");
 }else{
-	header("Location: ../departments.php?msg=2");
+	header("Location: ../consultorio.php?msg=2");
 }

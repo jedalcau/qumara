@@ -401,7 +401,7 @@ $data = $consulta->ListadoConsultorios();
 
 
 <?php 
-include "footer.html"; 
+include "footer.php";
 }else{
     header("Location: ../index.html");
 }

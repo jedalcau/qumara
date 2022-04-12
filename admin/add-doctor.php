@@ -214,7 +214,7 @@ include "header.php";
 
 
 <?php 
-include "footer.html"; 
+include "footer.php";
 }else{
     header("Location: ../index.html");
 }

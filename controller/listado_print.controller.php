@@ -14,12 +14,12 @@ if(!empty($fechainicio) && !empty($fechafin))
     if(!empty($fechainicio))
     {
         #echo "Solo fecha inicial";
-        echo "../view/report/report1.php?fechainicio=".$fechainicio;
+        echo "../view/report/reportes.php?fechainicio=".$fechainicio;
     }else{
         
         if(!empty($fechafin))
         {
-            echo "../view/report/report1.php?fechainicio=".$fechafin;
+            echo "../view/report/reportes.php?fechainicio=".$fechafin;
         }else{
             echo "#";
         }
