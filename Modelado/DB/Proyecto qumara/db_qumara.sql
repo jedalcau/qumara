@@ -64,3 +64,17 @@ SET FOREIGN_KEY_CHECKS =1;
 INSERT INTO `login` VALUES
 (1,'admin','21232f297a57a5a743894a0e4a801fc3',0,1,1,1,1);
 
+SELECT * FROM paciente;
+
+SELECT dni, concat(nombre,' ',apellidos) as paciente, sexo FROM paciente ORDER BY idpac DESC LIMIT 5;
+
+-- LISTA DE ATENCIONES, PACIENTE Y MEDICO
+SELECT ate.numhistoria , ate.nombres, ate.especialidad, CONCAT(doc.nombre,doc.apellidos) as medico, ate.fecCreate FROM atencion ate
+INNER JOIN doctor doc ON ate.iddoc=doc.iddoc
+ORDER BY ate.fecCreate DESC
+LIMIT 10;
+
+-- LISTA DE ULTIMOS PACIENTES REGISTRADOS
+SELECT pac.idpac, CONCAT(pac.)  FROM paciente pac
+ORDER BY pac.fecCreate DESC
+LIMIT 10;

@@ -169,7 +169,7 @@ include "header.php";
 					    $end_loop = $start_loop + 1;
 					    if($pagina > 1)
 					    {
-					     	echo "<li class='page-item'><a class='page-link' href='paciente.php?pagina=1'>Primera</a></li>";
+					     	echo "<li class='page-item'><a class='page-link' href='pacientes.php?pagina=1'>Primera</a></li>";
 					     	echo "<li class='page-item'><a class='page-link' href='paciente.php?pagina=".($pagina - 1)."'><<</a></li>";
 					     	
 					    }

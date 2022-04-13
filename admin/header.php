@@ -188,21 +188,21 @@ if(isset($_SESSION['administrator'])){
 
                             <!-- PATIENT LIST -->
                             <li class="submenu">
-                                <a href="paciente.php"><i class="fa fa-wheelchair"></i> <span>Pacientes</span><span class="menu-arrow"></span></a>
+                                <a href="#"><i class="fa fa-wheelchair"></i> <span>Pacientes</span><span class="menu-arrow"></span></a>
                                 <ul style="display: none;">
-                                    <li><a href="paciente.php"">Lista de Pacientes</a></li>
+                                    <li><a href="pacientes.php"">Lista de Pacientes</a></li>
                                     <li><a href="add-paciente.php">Registro de Pacientes</a></li>
                                 </ul>
                             </li>
 
                             <!-- HISTORY LIST -->
                             <li>
-                                <a href="hc1.php"><i class="fa fa-edit"></i> <span>Historias</span></a>
+                                <a href="historias.php"><i class="fa fa-edit"></i> <span>Historias</span></a>
                             </li>
 
                             <!-- CONSULTANT LIST -->
                             <li class="submenu">
-                                <a href="consultorio.php"><i class="fa fa-hospital-o"></i> <span>Consultorios</span><span class="menu-arrow"></a>
+                                <a href="#"><i class="fa fa-hospital-o"></i> <span>Consultorios</span><span class="menu-arrow"></a>
                                 <ul style="display: none;">
                                     <li><a href="consultorio.php"">Lista de Consultorio</a></li>
                                     <li><a href="add-consultorio.php">Registro de Consultorio</a></li>
@@ -231,14 +231,14 @@ if(isset($_SESSION['administrator'])){
                             <li class="submenu">
                                 <a href="#"><i class="fa fa-wheelchair"></i> <span>Pacientes</span><span class="menu-arrow"></span></a>
                                 <ul style="display: none;">
-                                    <li><a href="paciente.php">Lista de Pacientes</a></li>
+                                    <li><a href="pacientes.php">Lista de Pacientes</a></li>
                                     <li><a href="add-paciente.php">Registro de Pacientes</a></li>
                                 </ul>
                             </li>
 
                             <!-- HISTORY LIST -->
                             <li>
-                                <a href="hc1.php"><i class="fa fa-edit"></i> <span>Historias</span></a>
+                                <a href="historias.php"><i class="fa fa-edit"></i> <span>Historias</span></a>
                             </li>
 
                             <!-- REPOST LIST -->
@@ -261,7 +261,7 @@ if(isset($_SESSION['administrator'])){
                             <li class="submenu">
                                 <a href="#"><i class="fa fa-wheelchair"></i> <span>Pacientes</span><span class="menu-arrow"></span></a>
                                 <ul style="display: none;">
-                                    <li><a href="paciente.php">Lista de Pacientes</a></li>
+                                    <li><a href="pacientes.php">Lista de Pacientes</a></li>
                                     <li><a href="add-paciente.php">Registro de Pacientes</a></li>
                                 </ul>
                             </li>

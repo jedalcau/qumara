@@ -41,7 +41,7 @@ class Consultas
     ########## FUNCIONES LISTAR DATA #################################################
     function Listar_Pacientes()
     {
-        $sql = "SELECT concat(nombre,' ',apellidos) as paciente, sexo FROM paciente ORDER BY idpac DESC LIMIT 5;";
+        $sql = "SELECT dni, concat(nombre,' ',apellidos) as paciente, ciudad, telefono  FROM paciente ORDER BY idpac DESC LIMIT 5;";
         $data = $this->conn->ConsultaCon($sql);
         return $data;
     }
@@ -49,6 +49,12 @@ class Consultas
     function Listar_PersonalSalud(){
         $sql = "SELECT concat(nombre,' ',apellidos) as doctor, profesion FROM doctor ORDER BY iddoc DESC LIMIT 5;";
         $data = $this->conn->ConsultaCon($sql);
+        return $data;
+    }
+
+    function Listar_AtencionPaciente(){
+        $sql = "SELECT ate.numhistoria , ate.nombres, ate.especialidad, CONCAT(doc.nombre,doc.apellidos) as medico, ate.fecCreate FROM atencion ate INNER JOIN doctor doc ON ate.iddoc=doc.iddoc ORDER BY ate.fecCreate DESC LIMIT 10";
+        $data = $this->conn->ConsultaCon();
         return $data;
     }
 

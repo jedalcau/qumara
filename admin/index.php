@@ -6,15 +6,17 @@
         require "../model/consultas.model.php";
         $model_consulta = new Consultas();
         //$citas = $consulta->Citas5();
+
         // TOTALES
         $total_atenciones = $model_consulta->Contar_atenciones();
         $total_pacientes = $model_consulta->Contar_Pacientes();
         $total_personal_salud = $model_consulta->Contar_PersonalSalud();
         $total_consultorios = $model_consulta->Contar_Consultorios();
-        //DATA LISTAS
 
-        $lista_pacientes = $model_consulta->Listar_Pacientes();
+        //DATA LISTAS
+        //$lista_pacientes = $model_consulta->Listar_Pacientes();
         $lista_personal_salud = $model_consulta->Listar_PersonalSalud();
+        //$lista_atencion_paciente = $model_consulta->Listar_AtencionPaciente();
 
 ?>
             <div class="page-wrapper">
@@ -90,8 +92,131 @@
                         </div>
                     </div>-->
 
+                    <!-- BOX APPOINTMENT AND CONSULTANT LIST -->
                     <div class="row">
-                        <!-- ATENCIONES LIST -->
+                        <!-- APPOINTMENT LIST -->
+                        <div class="col-12 col-md-6 col-lg-8 col-xl-8">
+                            <div class="card">
+                                <!-- HEADER TITLE -->
+                                <div class="card-header">
+                                    <h4 class="card-title d-inline-block">LISTA DE ATENCIONES</h4> <a href="" class="btn btn-primary float-right">Ver Lista</a>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+
+                                            <table class="table mb-0">
+                                                <!--<thead class="d-none">
+                                                <tr>
+                                                    <th>Nombre Paciente</th>
+                                                    <th>Ciudad</th>
+                                                    <th>Telefono</th>
+                                                    <th class="text-right">Estado</th>
+                                                </tr>
+                                                </thead>-->
+                                                <tbody>
+                                                <tr>
+                                                    <td style="min-width: 200px;">
+                                                        <a class="avatar" href="profile.html">B</a>
+                                                        <h2><a href="#">a<span>5555</span></a></h2>
+                                                    </td>
+                                                    <td>
+                                                        <h5 class="time-title p-0">Ciudad</h5>
+                                                        <p><a/p>
+                                                    </td>
+                                                    <td>
+                                                        <h5 class="time-title p-0">Celular</h5>
+                                                        <p>ss</p>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <a href="#" class="btn btn-outline-primary take-btn">Ver Paciente</a>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BOX PATIENT AND DOCTORS -->
+                    <div class="row">
+                        <!-- PATIENTS LIST -->
+                        <div class="col-12 col-md-6 col-lg-8 col-xl-8">
+                            <div class="card">
+                                <!-- HEADER TITLE -->
+                                <div class="card-header">
+                                    <h4 class="card-title d-inline-block">PACIENTES REGISTRADOS</h4> <a href="pacientes.php" class="btn btn-primary float-right">Ver Lista</a>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                            <table class="table mb-0">
+                                                <!--<thead class="d-none">
+                                                <tr>
+                                                    <th>Nombre Paciente</th>
+                                                    <th>Ciudad</th>
+                                                    <th>Telefono</th>
+                                                    <th class="text-right">Estado</th>
+                                                </tr>
+                                                </thead>-->
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="min-width: 200px;">
+                                                            <a class="avatar" href="profile.html">B</a>
+                                                            <h2><a href="profile.html">paciente<span></span></a></h2>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="time-title p-0">Ciudad</h5>
+                                                            <p></p>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="time-title p-0">Celular</h5>
+                                                            <p></p>
+                                                        </td>
+                                                        <td class="text-right">
+                                                            <a href="#" class="btn btn-outline-primary take-btn">Ver Paciente</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DOCTOR LIST -->
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                            <div class="card member-panel">
+                                <div class="card-header bg-white">
+                                    <h4 class="card-title mb-0">PERSONAL DE SALUD</h4>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="contact-list">
+                                        <?php $i=1; while($fila=$lista_personal_salud->fetch_array(MYSQLI_ASSOC)){?>
+                                        <li>
+                                            <div class="contact-cont">
+                                                <div class="float-left user-img m-r-10">
+                                                    <a href="#"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status offline"></span></a>
+                                                </div>
+                                                <div class="contact-info">
+                                                    <a href="profile.html" title="John Doe"><span class="contact-name text-ellipsis"><?php echo $fila['doctor'];?></span></a>
+                                                    <span class="contact-date"><?php echo $fila['profesion'];?></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <?php $i++;}?>
+                                    </ul>
+                                </div>
+                                <div class="card-footer text-center bg-white">
+                                    <a href="personal_salud.php" class="text-muted">Ver Lista de Personal de Salud</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--<div class="row">
+                        <!-ATENCIONES LIST
                         <div class="col-12 col-md-6 col-lg-8 col-xl-8">
                             <div class="card">
                                 <div class="card-header">
@@ -200,109 +325,9 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- DOCTOR LIST -->
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-4">
-                            <div class="card member-panel">
-                                <div class="card-header bg-white">
-                                    <h4 class="card-title mb-0">Personal de Salud</h4>
-                                </div>
-                                <div class="card-body">
-                                    <ul class="contact-list">
-                                        <li>
-                                            <?php $i=1; while($fila=$lista_personal_salud->fetch_array(MYSQLI_ASSOC)){?>
-                                            <div class="contact-cont">
-                                                <div class="float-left user-img m-r-10">
-                                                    <a href="profile.html" title="John Doe"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status online"></span></a>
-                                                </div>
-                                                <div class="contact-info">
-                                                    <span class="contact-name text-ellipsis"><?php echo $fila['doctor'];?></span>
-                                                    <span class="contact-date"><?php echo $fila['profesion'];?></span>
-                                                </div>
-                                            </div>
-                                            <?php $i++;}?>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="card-footer text-center bg-white">
-                                    <a href="personal_salud.php" class="text-muted">Ver Lista de Personal de Salud</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- PATIENT LIST -->
-                    <div class="col-12 col-md-6 col-lg-8 col-xl-8">
-                        <div class="card">
-                            <!-- HEADER LIST -->
-                            <div class="card-header">
-                                <h4 class="card-title d-inline-block">PACIENTES AGREGADOS</h4> <a href="paciente.php" class="btn btn-primary float-right">Ver Lista</a>
-                            </div>
-                            <!-- CONTENT LIST -->
-                            <div class="card-body p-0">
-                                <div class="table-responsive">
-                                    <table class="table mb-0">
-                                        <thead class="d-none">
-                                        <tr>
-                                            <th>Patient Name</th>
-                                            <th>Doctor Name</th>
-                                            <th>Timing</th>
-                                            <th class="text-right">Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td style="min-width: 200px;">
-                                                <a class="avatar" href="profile.html">B</a>
-                                                <h2><a href="profile.html">Bernardo Galaviz <span>New York, USA</span></a></h2>
-                                            </td>
-                                            <td>
-                                                <h5 class="time-title p-0">Appointment With</h5>
-                                                <p>Dr. Cristina Groves</p>
-                                            </td>
-                                            <td>
-                                                <h5 class="time-title p-0">Timing</h5>
-                                                <p>7.00 PM</p>
-                                            </td>
-                                            <td class="text-right">
-                                                <a href="appointments.html" class="btn btn-outline-primary take-btn">Take up</a>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </div>-->
 
                     <div class="row">
-                        <!-- LISTA DE PACIENTES -->
-                        <div class="col-12 col-md-6 col-lg-8 col-xl-8">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title d-inline-block">Lista de Pacientes</h4> <a href="paciente.php" class="btn btn-primary float-right">View all</a>
-                                </div>
-                                <div class="card-block">
-                                    <div class="table-responsive">
-                                        <?php $i=1; while($fila=$lista_pacientes->fetch_array(MYSQLI_ASSOC)){?>
-                                        <table class="table mb-0 new-patient-table">
-                                            <tbody>
-                                            <tr>
-                                                <td width="35">
-                                                    <img width="28" height="28" class="rounded-circle" src="assets/img/user.jpg" alt="">
-                                                    <h2></h2>
-                                                </td>
-                                                <td><?php echo $fila['paciente'];?></td>
-                                                <td><button class="btn btn-primary btn-primary-one float-right">Fever</button></td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                        <?php $i++;}?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                         <!-- HOSPITAL MANAGEMENT -->
                         <!--<div class="col-12 col-md-6 col-lg-4 col-xl-4">
                             <div class="hospital-barchart">
