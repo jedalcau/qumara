@@ -32,7 +32,9 @@ class Consultorio
         mysqli_close($this->conn);
     }
 
-    /* FUNCION MOSTRAR CONSULTORIO */
+
+
+    /* FUNCION MOSTRAR DATA CONSULTORIO */
     function mostrarConsultorio(){
         $mostrar_Consultorio = "SELECT IN_ID_CON AS idConsultorio, VC_NOMBRE_CON AS nomConsultorio, VC_DESCRIPCION_CON AS desConsultorio, TI_ESTADO_CON AS estConsultorio FROM T_CONSULTORIO";
         $respuesta_Consultorio = $this->conn->ConsultaCon($mostrar_Consultorio);
@@ -40,10 +42,18 @@ class Consultorio
         mysqli_close($this->conn);
     }
 
-    /* FUNCION MOSTRAR CONSULTORIO */
+    /* FUNCION BUSCAR CONSULTORIO */
     function buscarConsultorio($idConsultorio){
-        $mostrar_Consultorio = "SELECT IN_ID_CON AS idConsultorio, VC_NOMBRE_CON AS nomConsultorio, VC_DESCRIPCION_CON AS desConsultorio, TI_ESTADO_CON AS estConsultorio FROM T_CONSULTORIO WHERE IN_ID_CON =".$idConsultorio;
-        $respuesta_Consultorio = $this->conn->ConsultaCon($mostrar_Consultorio);
+        $buscar_Consultorio = "SELECT IN_ID_CON AS idConsultorio, VC_NOMBRE_CON AS nomConsultorio, VC_DESCRIPCION_CON AS desConsultorio, TI_ESTADO_CON AS estConsultorio FROM T_CONSULTORIO WHERE IN_ID_CON =".$idConsultorio;
+        $respuesta_Consultorio = $this->conn->ConsultaArray($buscar_Consultorio);
+        return $respuesta_Consultorio;
+        mysqli_close($this->conn);
+    }
+
+    /* FUNCION MODIFICAR CONSULTORIO */
+    function modificarConsultorio($idConsultorio, $nomConsultorio, $desConsultorio, $estConsultorio){
+        $modificar_Consultorio = "UPDATE T_CONSULTORIO SET VC_NOMBRE_CON ='$nomConsultorio', VC_DESCRIPCION_CON = '$desConsultorio', TY_ESTADO_CON = '$estConsultorio' WHERE IN_ID_CON = ".$idConsultorio;
+        $respuesta_Consultorio = $this->conn->ConsultaSin($modificar_Consultorio);
         return $respuesta_Consultorio;
         mysqli_close($this->conn);
     }
@@ -70,8 +80,7 @@ class Consultorio
         	}
         
 
-		mysqli_close($this->conn);
-	}*/
+		mysqli_close($this->con*/
 
 	function Editar($idconsultorio,$consultorio,$descripcion,$status)
 	{
@@ -82,14 +91,16 @@ class Consultorio
 		mysqli_close($this->conn);
 	}
 
-	function MostrarConsultorios($idconsultorio)
-	{
-		$sql = "SELECT idconsultorio, consultorio, descripcion,status as est FROM consultorio WHERE idconsultorio=".$idconsultorio;
-		
-		$data = $this->conn->ConsultaArray($sql);
-		return $data;
-		mysqli_close($this->conn);
-	}
+    function MostrarConsultorios($idconsultorio)
+    {
+        $sql = "SELECT idconsultorio, consultorio, descripcion,status as est FROM consultorio WHERE idconsultorio=".$idconsultorio;
+
+        $data = $this->conn->ConsultaArray($sql);
+        return $data;
+        mysqli_close($this->conn);
+    }
+
+
 
 	function Buscartodos()
 	{

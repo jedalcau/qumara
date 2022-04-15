@@ -1,10 +1,10 @@
 <?php 
-    include "../model/consultorio.model.php";
+    include "../model/model_Consultorio.php";
 
     // Variables
     $nomConsultorio = trim(strtoupper($_POST['txt_nomConsultorio']));
     $desConsultorio = trim(strtoupper($_POST['txt_desConsultorio']));
-    $estConsultorio = 1;
+    $estConsultorio = trim(strtoupper($_POST['rdb_estConsultorio']));;
 
     // Instanciacion
     $model_Consultorio = new Consultorio();

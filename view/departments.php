@@ -3,7 +3,7 @@ session_start();
 if(isset($_SESSION['iddoctor']))
 {
 include "header.php";
-require "../model/consultorio.model.php";
+require "../model/model_Consultorio.php";
 
 $consultorio = new Consultorio();
 $data = $consultorio->Buscartodos();

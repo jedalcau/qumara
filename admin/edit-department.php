@@ -3,7 +3,7 @@ session_start();
 if(isset($_SESSION['administrator']))
 {
     include "header.php";
-    include "../model/consultorio.model.php";
+    include "../model/model_Consultorio.php";
 
     $idconsultorio = $_REQUEST['idconsultorio'];
 

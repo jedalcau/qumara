@@ -1,17 +1,18 @@
 <?php 
-include "../../model/consultorio.model.php";
+    include "../../model/model_Consultorio.php";
 
-echo $idconsultorio = trim(strtoupper($_POST['idconsultorio']));
-echo $consultorio   = trim(strtoupper($_POST['txtconsultorio']));
-echo $descripcion   = trim(strtoupper($_POST['txtdescripcion']));
-echo $status        = trim(strtoupper($_POST['status']));
+    echo $idConsultorio = trim(strtoupper($_POST['idconsultorio']));
+    echo $nomConsultorio = trim(strtoupper($_POST['txt_nomConsultorio']));
+    echo $desConsultorio = trim(strtoupper($_POST['txt_desConsultorio']));
+    echo $estConsultorio = trim(strtoupper($_POST['rbt_estConsultorio']));
 
-$consult  = new Consultorio();
-$response = $consult->Editar($idconsultorio,$consultorio,$descripcion,$status);
+    $consult  = new Consultorio();
+    $response = $consult->Editar($idconsultorio,$consultorio,$descripcion,$status);
 
-if($response == true){
-	
-	header("Location: ../consultorio.php?msg=1");
-}else{
-	header("Location: ../consultorio.php?msg=2");
-}
+    if($response == true){
+
+        header("Location: ../consultorio.php?msg=1");
+    }else{
+        header("Location: ../consultorio.php?msg=2");
+    }
+?>
