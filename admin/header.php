@@ -178,21 +178,13 @@ if(isset($_SESSION['administrator'])){
                             </li>
 
                             <!-- PERSONAL LIST -->
-                            <li class="submenu">
-                                <a href="#"><i class="fa fa-user-md"></i> <span>Personal</span><span class="menu-arrow"></span></a>
-                                <ul style="display: none;">
-                                    <li><a href="personal_salud.php"">Lista de Personal</a></li>
-                                    <li><a href="add-doctor.php">Registro de Personal</a></li>
-                                </ul>
+                            <li>
+                                <a href="personal_salud.php"><i class="fa fa-user-md"></i> <span>Personal</span></a>
                             </li>
 
                             <!-- PATIENT LIST -->
-                            <li class="submenu">
-                                <a href="#"><i class="fa fa-wheelchair"></i> <span>Pacientes</span><span class="menu-arrow"></span></a>
-                                <ul style="display: none;">
-                                    <li><a href="pacientes.php"">Lista de Pacientes</a></li>
-                                    <li><a href="add-paciente.php">Registro de Pacientes</a></li>
-                                </ul>
+                            <li>
+                                <a href="pacientes.php"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
                             </li>
 
                             <!-- HISTORY LIST -->
@@ -202,11 +194,7 @@ if(isset($_SESSION['administrator'])){
 
                             <!-- CONSULTANT LIST -->
                             <li class="submenu">
-                                <a href="#"><i class="fa fa-hospital-o"></i> <span>Consultorios</span><span class="menu-arrow"></a>
-                                <ul style="display: none;">
-                                    <li><a href="consultorio.php"">Lista de Consultorio</a></li>
-                                    <li><a href="add-consultorio.php">Registro de Consultorio</a></li>
-                                </ul>
+                                <a href="consultorio.php"><i class="fa fa-hospital-o"></i> <span>Consultorios</span></a>
                             </li>
 
                             <!-- REPOST LIST -->
@@ -215,7 +203,6 @@ if(isset($_SESSION['administrator'])){
                             </li>
                         </ul>
                         <!-- #endregion MENU PERFIL ADMINISTRADOR -->
-
 
                         <!-- #region MENU PERFIL PERSONAL DE SALUD -->
                         <ul>
@@ -228,12 +215,8 @@ if(isset($_SESSION['administrator'])){
                             </li>
 
                             <!-- PATIENT LIST -->
-                            <li class="submenu">
-                                <a href="#"><i class="fa fa-wheelchair"></i> <span>Pacientes</span><span class="menu-arrow"></span></a>
-                                <ul style="display: none;">
-                                    <li><a href="pacientes.php">Lista de Pacientes</a></li>
-                                    <li><a href="add-paciente.php">Registro de Pacientes</a></li>
-                                </ul>
+                            <li>
+                                <a href="pacientes.php"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
                             </li>
 
                             <!-- HISTORY LIST -->
@@ -250,7 +233,6 @@ if(isset($_SESSION['administrator'])){
 
                         <!-- #region MENU RECEPCIONISTA -->
                         <ul>
-
                             <li class="menu-title">Recepcionista</li>
                             <!-- APPOINTMENT LIST -->
                             <li>
@@ -259,11 +241,7 @@ if(isset($_SESSION['administrator'])){
 
                             <!-- PATIENT LIST -->
                             <li class="submenu">
-                                <a href="#"><i class="fa fa-wheelchair"></i> <span>Pacientes</span><span class="menu-arrow"></span></a>
-                                <ul style="display: none;">
-                                    <li><a href="pacientes.php">Lista de Pacientes</a></li>
-                                    <li><a href="add-paciente.php">Registro de Pacientes</a></li>
-                                </ul>
+                                <a href="pacientes.php"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
                             </li>
 
                             <!-- REPORTS LIST -->
@@ -273,10 +251,6 @@ if(isset($_SESSION['administrator'])){
 
                         </ul>
                         <!-- #endregion MENU PERSONAL DE SALUD -->
-
-                        <br>
-                        <br>
-                        <br>
 
                         <!-- #region DEV -->
                         <ul>

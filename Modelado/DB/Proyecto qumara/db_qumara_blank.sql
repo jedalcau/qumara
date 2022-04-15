@@ -46,6 +46,7 @@ CREATE TABLE T_CONSULTORIO (
   PRIMARY KEY (IN_ID_CON)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT 'Tabla Consultorio';
 
+
 --
 -- ESTRUCTURA TABLA: Personal de Salud
 --

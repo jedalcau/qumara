@@ -183,7 +183,7 @@
                             </div>
                         </div>
 
-                        <!-- DOCTOR LIST -->
+                        <!-- PERSONAL DE SALUD LIST -->
                         <div class="col-12 col-md-6 col-lg-4 col-xl-4">
                             <div class="card member-panel">
                                 <div class="card-header bg-white">
