@@ -58,7 +58,7 @@
                                                 <?php
                                                     }else{
                                                 ?>
-                                                <span class="custom-badge status-green">Inactivo</span>
+                                                <span class="custom-badge status-red">Inactivo</span>
                                                 <td class="text-right">
                                                     <div class="dropdown dropdown-action">
                                                         <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
@@ -86,6 +86,7 @@
                 </div>
             </div>
 
+        <!-- Dialog Delete Consultorio -->
             <div id="delete_department" class="modal fade delete-modal" role="dialog">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
