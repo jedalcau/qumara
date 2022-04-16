@@ -20,7 +20,7 @@ if(isset($_SESSION['administrator']))
                 </div>
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
-                        <form action="controller1/consultorio.controller.php" method="post">
+                        <form action="controller1/controller_Consultorio.php" method="post">
 							<div class="form-group">
                                 <input type="hidden" name="idconsultorio" id="idconsultorio" value="<?php echo $idconsultorio;?>">
 								<label>Nombre del consultorio</label>

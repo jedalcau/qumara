@@ -16,7 +16,7 @@
                     <!-- CONTENT -->
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
-                            <form action="../controller/consultorio.controller.php" method="post">
+                            <form action="../controller/controller_Consultorio.php" method="post">
                                 <!-- Nombre Consultorio -->
                                 <div class="form-group">
                                     <label>Nombre Consultorio</label>

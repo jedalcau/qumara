@@ -56,7 +56,7 @@ TRUNCATE empleado;
 TRUNCATE experiencia;
 TRUNCATE db_qumara.historiaclinica;
 TRUNCATE db_qumara.doctor;
-TRUNCATE consultorio;
+TRUNCATE T_CONSULTORIO;
 TRUNCATE login;
 
 SET FOREIGN_KEY_CHECKS =1;

@@ -270,7 +270,7 @@ if(isset($_SESSION['administrator'])){
             <!-- FIN MENU PRINCIPAL -->
 
         <!-- JS -->
-        <script type="text/javascript">
+        <!--<script type="text/javascript">
             $(document).ready(function(){
                 $('#sidebar-menu li').on('click', function(){
                     //alert("Activado");
@@ -278,7 +278,7 @@ if(isset($_SESSION['administrator'])){
                     $(this).addClass('active');
                 });
             });
-        </script>
+        </script>-->
 <?php
     }else{
     header("Location: ../index.html");

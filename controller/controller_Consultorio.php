@@ -14,8 +14,8 @@
 
     // Evaluamos el resultado
     if($resultado_guardarConsultorio == true){
-        header("Location: ../admin/consultorio.php?msg=1");
+        header("Location: ../admin/consultorio.php");
     }else{
-        header("Location: ../admin/consultorio.php?msg=2");
+        header("Location: ../admin/consultorio.php");
     }
  ?>;

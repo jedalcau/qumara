@@ -12,7 +12,7 @@
     $model_Consultorio = new Consultorio();
     $data_Consultorio = $model_Consultorio->buscarConsultorio($idConsultorio);
 ?>
-            <!-- Agregar Consultorio -->
+            <!-- Modificar Consultorio -->
             <div class="page-wrapper">
                 <div class="content">
                     <!-- HEADER -->
@@ -24,7 +24,7 @@
                     <!-- CONTENT -->
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
-                            <form action="../controller/consultorio.controller.php" method="post">
+                            <form action="controller1/controller_Consultorio.php" method="post">
                                 <!-- ID Consultorio -->
                                 <div class="form-group">
                                     <label>ID Consultorio</label>
@@ -47,11 +47,11 @@
                                 <div class="form-group">
                                     <label class="display-block">Estado</label>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="status" id="product_active" value="1" checked>
+                                        <input class="form-check-input" type="radio" name="rdb_estConsultorio" id="product_active" value="1" checked>
                                         <label class="form-check-label" for="product_active">Activo</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="status" id="product_inactive" value="0">
+                                        <input class="form-check-input" type="radio" name="rdb_estConsultorio" id="product_inactive" value="2">
                                         <label class="form-check-label" for="product_inactive">Inactivo</label>
                                     </div>
                                 </div>

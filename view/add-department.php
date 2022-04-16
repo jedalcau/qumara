@@ -13,7 +13,7 @@ if(isset($_SESSION['iddoctor']))
                 </div>
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
-                        <form action="../controller/consultorio.controller.php" method="post">
+                        <form action="../controller/controller_Consultorio.php" method="post">
 							<div class="form-group">
 								<label>Nombre del consultorio</label>
 								<input class="form-control" type="text" name="txtconsultorio" id="txtconsultorio">
