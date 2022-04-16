@@ -3,7 +3,7 @@
     if(isset($_SESSION['administrator']))
     {
         include "header.php";
-    ?>
+?>
             <!-- Agregar Consultorio -->
             <div class="page-wrapper">
                 <div class="content">

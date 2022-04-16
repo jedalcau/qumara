@@ -82,7 +82,6 @@ class Doctor
 		$sql = "SELECT iddoc,nombre,apellidos,email,fecnac,numcolegiatura,sexo,direccion,departamento,provincia,distrito,profesion,telefono,avatar,biografica,status,fecCreate FROM doctor;";
 		$data = $this->conn->ConsultaCon($sql);
 		return $data;
-		
 	}
 
 	function AddEducation($iddoc,$trabajo,$cargo,$tiempo)

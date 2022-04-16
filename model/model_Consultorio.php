@@ -55,17 +55,4 @@ class Consultorio
         return $respuesta_Consultorio;
         mysqli_close($this->conn);
     }
-
-
-
-
-	function Buscartodos()
-	{
-		$sql = "SELECT * FROM consultorio;";
-		
-		$data = $this->conn->ConsultaCon($sql);
-		return $data;
-		mysqli_close($this->conn);
-	}
-
 }
