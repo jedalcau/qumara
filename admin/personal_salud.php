@@ -27,42 +27,27 @@
                     <div class="col-md-4 col-sm-4  col-lg-3">
                         <div class="profile-widget">
                             <div class="doctor-img">
-                                <a class="avatar" href="profile.html"><img alt="" src="assets/img/doctor-thumb-03.jpg"></a>
+                                <a class="avatar" href="profile.html"><img alt="" src="<?php echo $fila['avaPSalud']; ?>"></a>
                             </div>
                             <div class="dropdown profile-action">
                                 <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                 <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="edit-doctor.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                    <a class="dropdown-item" href="edit-doctor.html"><i class="fa fa-pencil m-r-5"></i> Editar</a>
+<!--                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Eliminar</a>-->
                                 </div>
                             </div>
-                            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Cristina Groves</a></h4>
-                            <div class="doc-prof">Gynecologist</div>
+                            <--! Personal Salud Nombre -->
+                            <h4 class="doctor-name text-ellipsis"><a href="profile.html"><?php echo $fila['nomPSalud']." ".$fila['apePSalud']; ?><</a></h4>
+                            <--! PSalud Especialidad -->
+                            <div class="doc-prof"><?php echo $fila['profPSalud']; ?></div>
                             <div class="user-country">
-                                <i class="fa fa-map-marker"></i> United States, San Francisco
+                                <i class="fa fa-map-marker"></i><?php echo $fila['profPSalud']; ?>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-4 col-sm-4  col-lg-3">
-                        <div class="profile-widget">
-                            <div class="doctor-img">
-                                <a class="avatar" href="profile.html"><img alt="" src="assets/img/doctor-thumb-03.jpg"></a>
-                            </div>
-                            <div class="dropdown profile-action">
-                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="edit-doctor.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_doctor"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                </div>
-                            </div>
-                            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Cristina Groves</a></h4>
-                            <div class="doc-prof">Gynecologist</div>
-                            <div class="user-country">
-                                <i class="fa fa-map-marker"></i> United States, San Francisco
-                            </div>
-                        </div>
-                    </div>
+                <?php
+                    }
+                ?>
                 </div>
 
                 <!--<div class="row">
