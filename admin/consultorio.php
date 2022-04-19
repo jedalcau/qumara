@@ -40,12 +40,15 @@
                                     ?>
                                         <tr>
                                             <td><?php echo $i; ?></td>
+                                            <!-- NOMBRE -->
                                             <td><?php $fila['idConsultorio']; echo $fila['nomConsultorio']?></td>
+                                            <!-- ESTADO -->
                                             <td>
                                                 <?php
                                                     if($fila['estConsultorio'] ==1){
                                                 ?>
                                                 <span class="custom-badge status-green">Activo</span>
+                                                <!-- ACCION -->
                                                 <td class="text-right">
                                                     <div class="dropdown dropdown-action">
                                                         <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
@@ -87,7 +90,7 @@
             </div>
 
         <!-- Dialog Delete Consultorio -->
-            <div id="delete_department" class="modal fade delete-modal" role="dialog">
+            <!--<div id="delete_department" class="modal fade delete-modal" role="dialog">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-body text-center">
@@ -99,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
 <?php 
     include "footer.php";
     }else{

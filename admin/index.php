@@ -145,7 +145,7 @@
                             <div class="card">
                                 <!-- HEADER TITLE -->
                                 <div class="card-header">
-                                    <h4 class="card-title d-inline-block">PACIENTES REGISTRADOS</h4> <a href="pacientes.php" class="btn btn-primary float-right">Ver Lista</a>
+                                    <h4 class="card-title d-inline-block">PACIENTES REGISTRADOS</h4> <a href="paciente.php" class="btn btn-primary float-right">Ver Lista</a>
                                 </div>
                                 <div class="card-body p-0">
                                     <div class="table-responsive">

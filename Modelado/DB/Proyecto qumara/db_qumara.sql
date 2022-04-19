@@ -50,8 +50,7 @@ SELECT * FROM paciente;
 SET FOREIGN_KEY_CHECKS = 0;
 
 TRUNCATE atencion;
-TRUNCATE paciente;
-TRUNCATE educacion;
+DROP TABLE T_PACIENTE;
 TRUNCATE empleado;
 TRUNCATE experiencia;
 TRUNCATE db_qumara.historiaclinica;

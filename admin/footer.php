@@ -19,6 +19,11 @@
         <script src="assets/js/chart.js"></script>
 
         <script>
+            $('#dtp_fnacPaciente').datetimepicker({
+                format: 'YYYY-MM-DD'
+            });
+        </script>
+   <!--     <script>
             $(function () {
                 $('#datetimepicker3').datetimepicker({
                     format: 'LT'
@@ -27,6 +32,6 @@
                     format: 'LT'
                 });
             });
-        </script>
+        </script>-->
     </body>
 </html>

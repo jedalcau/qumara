@@ -184,7 +184,7 @@ if(isset($_SESSION['administrator'])){
 
                             <!-- PATIENT LIST -->
                             <li>
-                                <a href="pacientes.php"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
+                                <a href="paciente.php"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
                             </li>
 
                             <!-- HISTORY LIST -->
@@ -193,7 +193,7 @@ if(isset($_SESSION['administrator'])){
                             </li>
 
                             <!-- CONSULTANT LIST -->
-                            <li class="submenu">
+                            <li>
                                 <a href="consultorio.php"><i class="fa fa-hospital-o"></i> <span>Consultorios</span></a>
                             </li>
 
@@ -216,7 +216,7 @@ if(isset($_SESSION['administrator'])){
 
                             <!-- PATIENT LIST -->
                             <li>
-                                <a href="pacientes.php"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
+                                <a href="paciente.php"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
                             </li>
 
                             <!-- HISTORY LIST -->
@@ -241,7 +241,7 @@ if(isset($_SESSION['administrator'])){
 
                             <!-- PATIENT LIST -->
                             <li class="submenu">
-                                <a href="pacientes.php"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
+                                <a href="paciente.php"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
                             </li>
 
                             <!-- REPORTS LIST -->
