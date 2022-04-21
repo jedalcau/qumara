@@ -1,6 +1,6 @@
 <?php 
 
-require "Conexion.php";
+require "model_Conexion.php";
 
 class HistoriaClinica
 {
@@ -8,7 +8,7 @@ class HistoriaClinica
 
 	function __construct()
 	{
-		$this->conn = new Conexion();
+		$this->conn = new modelConexionDB();
 		return $this->conn;
 	}
 

@@ -1,13 +1,13 @@
 <?php
-    require "Conexion.php";
+    require "model_Conexion.php";
 
-    class Login extends Conexion
+    class Login extends modelConexionDB
     {
         private $conn;
 
         function __construct()
         {
-            $this->conn = new Conexion();
+            $this->conn = new modelConexionDB();
             return $this->conn;
         }
 

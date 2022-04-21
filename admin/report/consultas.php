@@ -1,12 +1,12 @@
 <?php
-require_once '../../model/Conexion.php';
+require_once '../../model/model_Conexion.php';
 
-class Consultas extends Conexion
+class Consultas extends modelConexionDB
 {
 
     function __construct()
 	{
-		$this->conn = new Conexion();
+		$this->conn = new modelConexionDB();
 		return $this->conn;
 	}
     

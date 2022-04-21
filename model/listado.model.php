@@ -1,12 +1,12 @@
 <?php
-require_once 'Conexion.php';
+require_once 'model_Conexion.php';
 
 class Listados
 {
 
     function __construct()
 	{
-		$this->conn = new Conexion();
+		$this->conn = new modelConexionDB();
 		return $this->conn;
 	}
     

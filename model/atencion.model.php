@@ -1,5 +1,5 @@
 <?php 
-require "Conexion.php";
+require "model_Conexion.php";
 
 class Atencion
 {
@@ -7,7 +7,7 @@ class Atencion
 
 	function __construct()
 	{
-		$this->conn = new Conexion();
+		$this->conn = new modelConexionDB();
 		return $this->conn;
 	}
 

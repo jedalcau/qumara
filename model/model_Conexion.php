@@ -1,12 +1,12 @@
 <?php
 
-class Conexion
+class ConexionDB
 {
 	private $conn;
 
 	function __construct()
 	{
-		$host = "localhost";
+	    $host = "localhost";
         $user = "usr_qumara";
         $pass = "pass_qumara";
         $db   = "db_qumara";
@@ -18,7 +18,7 @@ class Conexion
             exit();
         }
 
-        //echo $this->conn->host_info. " PIAS";
+        #echo $this->conn->host_info. " PIAS";
         return $this->conn;
 	}
 
@@ -33,7 +33,6 @@ class Conexion
         }
 
         return true;
-        mysqli_close($this->conn);
     }
 
     public function ConsultaCon($sql)
@@ -47,7 +46,6 @@ class Conexion
         }
 
         return $result;
-        mysqli_close($this->conn);
     }
 
     public function ConsultaArray($sql)
@@ -62,6 +60,5 @@ class Conexion
 
         $data = $result->fetch_array(MYSQLI_ASSOC);
         return $data;
-        mysqli_close($this->conn);
     }
 }

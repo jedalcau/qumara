@@ -1,5 +1,5 @@
 <?php 
-require_once "Conexion.php";
+    require_once "model_Conexion.php";
 
 class Consultorio
 {
@@ -7,7 +7,7 @@ class Consultorio
 
 	function __construct()
 	{
-		$this->conn = new Conexion();
+		$this->conn = new ConexionDB();
 		return $this->conn;
 	}
 
