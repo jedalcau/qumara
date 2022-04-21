@@ -178,7 +178,7 @@
                                             <label>Avatar</label>
                                             <div class="profile-upload">
                                                 <div class="upload-img">
-                                                    <img alt="" src="assets/img/user.jpg">
+                                                    <img alt="" src="../assets/img/user.jpg">
                                                 </div>
                                                 <div class="upload-input">
                                                     <input type="file" class="form-control" name="upi_avaPaciente" id="upi_avaPaciente" value="">

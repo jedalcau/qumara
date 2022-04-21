@@ -25,61 +25,39 @@
                                     <!-- Cabecera Tabla -->
                                     <thead>
                                         <tr>
-                                        <th>#</th>
-                                        <th>Nombre Consultorio</th>
-                                        <th>Estado</th>
-                                        <th class="text-right">Accion</th>
-                                    </tr>
+                                            <th>Nombre Consultorio</th>
+                                            <th>Estado</th>
+                                            <th class="text-right">Accion</th>
+                                        </tr>
                                     </thead>
                                     <!-- Cuerpo Tabla -->
                                     <tbody>
-                                    <?php
-                                        $i =1;
-                                        while($fila = $mostrar_Consultorio->fetch_array(MYSQLI_ASSOC)){
-
-                                    ?>
+                                    <?php $i =1; while($fila = $mostrar_Consultorio->fetch_array(MYSQLI_ASSOC)){ ?>
                                         <tr>
-                                            <td><?php echo $i; ?></td>
                                             <!-- NOMBRE -->
                                             <td><?php $fila['idConsultorio']; echo $fila['nomConsultorio']?></td>
+
                                             <!-- ESTADO -->
                                             <td>
-                                                <?php
-                                                    if($fila['estConsultorio'] ==1){
-                                                ?>
-                                                <span class="custom-badge status-green">Activo</span>
-                                                <!-- ACCION -->
-                                                <td class="text-right">
-                                                    <div class="dropdown dropdown-action">
-                                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                                                        <div class="dropdown-menu dropdown-menu-right">
-                                                            <a class="dropdown-item" href="edit-consultorio.php?idConsultorio=<?php echo $fila['idConsultorio'];?>"><i class="fa fa-pencil m-r-5"></i>Editar</a>
-<!--                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal_delete_consultorio"><i class="fa fa-trash-o m-r-5"></i> Delete</a>-->
-                                                        </div>
+                                                <?php if($fila['estConsultorio'] ==1){ ?>
+                                                    <span class="custom-badge status-green">Activo</span>
+                                                <?php }else{ ?>
+                                                    <span class="custom-badge status-red">Inactivo</span>
+                                                <?php } ?>
+                                            </td>
+
+                                            <!-- Menu Acciones -->
+                                            <td class="text-right">
+                                                <div class="dropdown dropdown-action">
+                                                    <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="edit-consultorio.php?idCon=<?php echo $fila['idConsultorio'];?>"><i class="fa fa-pencil m-r-5"></i>Editar</a>
+<!--                                                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_patient"><i class="fa fa-trash-o m-r-5"></i> Delete</a>-->
                                                     </div>
-                                                </td>
-                                                <?php
-                                                    }else{
-                                                ?>
-                                                <span class="custom-badge status-red">Inactivo</span>
-                                                <td class="text-right">
-                                                    <div class="dropdown dropdown-action">
-                                                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
-                                                        <div class="dropdown-menu dropdown-menu-right">
-                                                            <a class="dropdown-item" href="edit-consultorio.php?idConsultorio=<?php echo $fila['idConsultorio'];?>"><i class="fa fa-pencil m-r-5"></i>Editar</a>
-<!--                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal_delete_consultorio"><i class="fa fa-trash-o m-r-5"></i> Delete</a>                                                            -->
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <?php
-                                                    }
-                                                    $i++;
-                                                ?>
+                                                </div>
                                             </td>
                                         </tr>
-                                    <?php
-                                        }
-                                    ?>
+                                    <?php } ?>
                                     </tbody>
                                     <!-- Fin Cuerpo Tabla -->
                                 </table>
@@ -95,7 +73,7 @@
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-body text-center">
-                                <img src="assets/img/sent.png" alt="" width="50" height="46">
+                                <img src="../assets/img/sent.png" alt="" width="50" height="46">
                                 <h3>Estas de acuerdo con eliminar el Consultorio?</h3>
                                 <h2><?php echo $fila['nomConsultorio']; ?></h2>
                                 <div class="m-t-20"> <a href="#" class="btn btn-white" data-dismiss="modal">No</a>

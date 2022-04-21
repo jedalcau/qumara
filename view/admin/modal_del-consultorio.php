@@ -3,7 +3,7 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-body text-center">
-                            <img src="assets/img/sent.png" alt="" width="50" height="46">
+                            <img src="../assets/img/sent.png" alt="" width="50" height="46">
                             <h3>Estas seguro de Eliminar el consultorio?</h3>
 
                             <div class="m-t-20">

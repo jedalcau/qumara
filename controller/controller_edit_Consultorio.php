@@ -1,5 +1,5 @@
 <?php 
-    include "../../model/model_Consultorio.php";
+    include "../model/model_Consultorio.php";
 
     $idConsultorio = trim(strtoupper($_POST['txt_idConsultorio']));
     $nomConsultorio = trim(strtoupper($_POST['txt_nomConsultorio']));
@@ -10,8 +10,8 @@
     $resultado_ModificarConsultorio = $model_Consultorio->modificarConsultorio($idConsultorio, $nomConsultorio, $desConsultorio, $estConsultorio);
 
     if($resultado_ModificarConsultorio == true){
-        header("Location: ../consultorio.php");
+        header("Location:../view/consultorio.php");
     }else{
-        header("Location: ../consultorio.php");
+        header("Location:../view/consultorio.php");
     }
 ?>

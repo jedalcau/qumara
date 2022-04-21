@@ -5,10 +5,10 @@
     include "header.php";
     include "../../model/model_Consultorio.php";
     //
-    $idConsultorio = $_REQUEST['idConsultorio'];
+    $idCon = $_REQUEST['idCon'];
     // Instanciamos la Clase Model Consultorio
     $model_Consultorio = new Consultorio();
-    $data_Consultorio = $model_Consultorio->buscarConsultorio($idConsultorio);
+    $data_Consultorio = $model_Consultorio->buscarConsultorio($idCon);
 ?>
             <!-- Modificar Consultorio -->
             <div class="page-wrapper">
@@ -22,11 +22,11 @@
                     <!-- CONTENT -->
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
-                            <form action="controller/controller_edit_Consultorio.php" method="post">
+                            <form action="../../controller/controller_edit_Consultorio.php" method="post">
                                 <!-- ID Consultorio -->
                                 <div class="form-group">
                                     <label>ID Consultorio</label>
-                                    <input class="form-control" type="text" name="txt_idConsultorio" id="txt_idConsultorio" readonly="" value="<?php echo $idConsultorio; ?>">
+                                    <input class="form-control" type="text" name="txt_idConsultorio" id="txt_idConsultorio" readonly="" value="<?php echo $idCon; ?>">
                                 </div>
 
                                 <!-- Nombre Consultorio -->
@@ -66,6 +66,6 @@
 <?php
     include "footer.php";
     }else{
-        header("Location: ../index.html");
+        header("Location: ../index.php");
     }
 ?>

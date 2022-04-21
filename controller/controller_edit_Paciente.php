@@ -1,5 +1,5 @@
 <?php
-    include "../../model/model_Paciente.php";
+    include "../model/model_Paciente.php";
 
     // Variable
     $idPac = trim(strtoupper($_POST['txt_idPaciente']));
@@ -23,8 +23,8 @@
     $resultado_guardarPaciente = $model_Paciente->modificarPacientes($idPac, $dniPac, $nomPac, $apePac, $fnaPac, $genPac, $emaPac, $telPac, $dirPac, $proPac, $disPac, $locPac, $avaPac, $estPac);
     // evaluamos los resultados
     if ($resultado_guardarPaciente == true){
-        header("Location: ../paciente.php");
+        header("Location:../view/consultorio.php");
     }else{
-        header("Location: ../paciente.php");
+        header("Location:../view/consultorio.php");
     }
 ?>

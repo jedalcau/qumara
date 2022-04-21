@@ -33,13 +33,12 @@
                 switch($resultado_validarAcceso['nivAcceso']) {
                     case 1: # Administrador
                         echo $_SESSION['administrator'] = $resultado_validarAcceso['idPAdministrativo'];
-//                        header("Location: ../viex vadmin/index.html");
-                        header('Location: ../view/admin/index.php');
+                            header('Location: ../view/admin/index.php');
                         break;
                     case 3: # Empleado
 //                        echo "Como Trabajador";
                         echo $_SESSION['personal'] = $resultado_validarAcceso['idPAdministrativo'];
-                        header('Location: ../view/personal/index.php');
+                            header('Location: ../view/personal/index.php');
                         break;
                 }
 
@@ -50,5 +49,4 @@
         }else{
             header("Location: ../index.php");
         }
-
     }

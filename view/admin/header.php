@@ -1,7 +1,6 @@
 <?php 
-session_start();
-if(isset($_SESSION['administrator'])){
-
+    session_start();
+    if(isset($_SESSION['administrator'])){
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -28,11 +27,6 @@ if(isset($_SESSION['administrator'])){
             <script src="../assets/js/php5shiv.min.js"></script>
             <script src="../assets/js/respond.min.js"></script>
         <![endif]-->
-            <!--<style>
-                .main-wrapper{
-                    background-color: #a9a9a9;
-                }
-            </style>-->
     </head>
 
     <body>
@@ -179,7 +173,7 @@ if(isset($_SESSION['administrator'])){
 
                             <!-- PERSONAL LIST -->
                             <li>
-                                <a href="personal_salud.php"><i class="fa fa-user-md"></i> <span>Personal</span></a>
+                                <a href="../personal_salud.php"><i class="fa fa-user-md"></i> <span>Personal</span></a>
                             </li>
 
                             <!-- PATIENT LIST -->
@@ -216,17 +210,17 @@ if(isset($_SESSION['administrator'])){
 
                             <!-- PATIENT LIST -->
                             <li>
-                                <a href="../../admin/paciente.php"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
+                                <a href="paciente.php"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
                             </li>
 
                             <!-- HISTORY LIST -->
                             <li>
-                                <a href="../../admin/historias.php"><i class="fa fa-edit"></i> <span>Historias</span></a>
+                                <a href="../historias.php"><i class="fa fa-edit"></i> <span>Historias</span></a>
                             </li>
 
                             <!-- REPOST LIST -->
                             <li>
-                                <a href="../../admin/reportes.php"><i class="fa fa-book"></i> <span> Reportes </span></a>
+                                <a href="../reportes.php"><i class="fa fa-book"></i> <span> Reportes </span></a>
                             </li>
                         </ul>
                         <!-- #endregion MENU PERSONAL DE SALUD -->
@@ -236,12 +230,12 @@ if(isset($_SESSION['administrator'])){
                             <li class="menu-title">Recepcionista</li>
                             <!-- APPOINTMENT LIST -->
                             <li>
-                                <a href="../../admin/citas.php"><i class="fa fa-calendar"></i> <span>Citas</span></a>
+                                <a href="../citas.php"><i class="fa fa-calendar"></i> <span>Citas</span></a>
                             </li>
 
                             <!-- PATIENT LIST -->
                             <li class="submenu">
-                                <a href="../../admin/paciente.php"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
+                                <a href="paciente.php"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
                             </li>
 
                             <!-- REPORTS LIST -->

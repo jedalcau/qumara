@@ -42,7 +42,7 @@
                                             <!-- DNI -->
                                             <td><?php echo $fila['dniPac']; ?></td>
                                             <!-- Nombre -->
-                                            <td><img width="28" height="28" src="assets/img/user.jpg" class="rounded-circle m-r-5" alt=""><?php echo $fila['nomPac']; ?></td>
+                                            <td><img width="28" height="28" src="../assets/img/user.jpg" class="rounded-circle m-r-5" alt=""><?php echo $fila['nomPac']; ?></td>
                                             <!-- Edad -->
                                             <td><?php echo $fila['edaPac']; ?></td>
                                             <!-- Localidad -->
@@ -82,7 +82,7 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-body text-center">
-                            <img src="assets/img/sent.png" alt="" width="50" height="46">
+                            <img src="../assets/img/sent.png" alt="" width="50" height="46">
                             <h3>Are you sure want to delete this Patient?</h3>
                             <div class="m-t-20"> <a href="#" class="btn btn-white" data-dismiss="modal">Close</a>
                                 <button type="submit" class="btn btn-danger">Delete</button>
