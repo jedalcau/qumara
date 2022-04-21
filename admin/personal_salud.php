@@ -2,7 +2,7 @@
     session_start();
     if(isset($_SESSION['administrator'])){
         require_once "header.php";
-        require_once "model1/model_PersonalSalud.php";
+        require_once "model/model_PersonalSalud.php";
     //    @$mensaje = $_REQUEST['msg'];
         $model_PersonalSalud = new PersonalSalud();
         $mostrar_PersonalSalud = $model_PersonalSalud->mostrarPersonalSalud();
@@ -15,7 +15,7 @@
                         <h4 class="page-title">Personal de Salud</h4>
                     </div>
                     <div class="col-sm-8 col-9 text-right m-b-20">
-                        <a href="add-personal-salud.php" class="btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Agregar Personal</a>
+                        <a href="add-personal_salud.php" class="btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Agregar Personal</a>
                     </div>
                 </div>
                 <!-- Contentn Personal de Salud -->

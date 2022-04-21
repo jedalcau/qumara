@@ -4,10 +4,8 @@
     {
     include "header.php";
     include "../model/model_Consultorio.php";
-
     //
     $idConsultorio = $_REQUEST['idConsultorio'];
-
     // Instanciamos la Clase Model Consultorio
     $model_Consultorio = new Consultorio();
     $data_Consultorio = $model_Consultorio->buscarConsultorio($idConsultorio);
@@ -24,7 +22,7 @@
                     <!-- CONTENT -->
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
-                            <form action="controller1/controller_Consultorio.php" method="post">
+                            <form action="controller/controller_edit_Consultorio.php" method="post">
                                 <!-- ID Consultorio -->
                                 <div class="form-group">
                                     <label>ID Consultorio</label>

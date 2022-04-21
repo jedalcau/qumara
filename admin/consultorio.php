@@ -54,7 +54,7 @@
                                                         <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                                         <div class="dropdown-menu dropdown-menu-right">
                                                             <a class="dropdown-item" href="edit-consultorio.php?idConsultorio=<?php echo $fila['idConsultorio'];?>"><i class="fa fa-pencil m-r-5"></i>Editar</a>
-<!--                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_department"><i class="fa fa-trash-o m-r-5"></i> Delete</a>-->
+<!--                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal_delete_consultorio"><i class="fa fa-trash-o m-r-5"></i> Delete</a>-->
                                                         </div>
                                                     </div>
                                                 </td>
@@ -67,7 +67,7 @@
                                                         <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                                         <div class="dropdown-menu dropdown-menu-right">
                                                             <a class="dropdown-item" href="edit-consultorio.php?idConsultorio=<?php echo $fila['idConsultorio'];?>"><i class="fa fa-pencil m-r-5"></i>Editar</a>
-<!--                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_department"><i class="fa fa-trash-o m-r-5"></i> Delete</a>-->
+<!--                                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal_delete_consultorio"><i class="fa fa-trash-o m-r-5"></i> Delete</a>                                                            -->
                                                         </div>
                                                     </div>
                                                 </td>
@@ -89,20 +89,23 @@
                 </div>
             </div>
 
-        <!-- Dialog Delete Consultorio -->
-            <!--<div id="delete_department" class="modal fade delete-modal" role="dialog">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body text-center">
-                            <img src="assets/img/sent.png" alt="" width="50" height="46">
-                            <h3>Are you sure want to delete this Department?</h3>
-                            <div class="m-t-20"> <a href="#" class="btn btn-white" data-dismiss="modal">Close</a>
-                                <button type="submit" class="btn btn-danger">Delete</button>
+            <!-- Dialog Delete Consultorio -->
+
+                <div id="modal_delete_consultorio" class="modal fade delete-modal" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body text-center">
+                                <img src="assets/img/sent.png" alt="" width="50" height="46">
+                                <h3>Estas de acuerdo con eliminar el Consultorio?</h3>
+                                <h2><?php echo $fila['nomConsultorio']; ?></h2>
+                                <div class="m-t-20"> <a href="#" class="btn btn-white" data-dismiss="modal">No</a>
+                                    <button type="submit" class="btn btn-danger">Si</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>-->
+
 <?php 
     include "footer.php";
     }else{

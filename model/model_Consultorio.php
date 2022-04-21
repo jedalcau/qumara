@@ -55,4 +55,11 @@ class Consultorio
         return $respuesta_Consultorio;
         mysqli_close($this->conn);
     }
+
+    /* FUNCION ELIMINAR CONSULTORIO */
+    function eliminarConsultorio($idConsultorio){
+        $eliminar_Consultorio = "DELETE FROM T_CONSULTORIO WHERE IN_ID_CON =".$idConsultorio;
+        $respuesta_Consultorio = $this->conn->ConsultaSin($eliminar_Consultorio);
+        return $respuesta_Consultorio;
+    }
 }

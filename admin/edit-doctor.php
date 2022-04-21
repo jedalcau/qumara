@@ -4,7 +4,7 @@ if(isset($_SESSION['administrator']))
 {
 
 include "header.php";
-require "model1/doctor.model.php";
+require "model/doctor.model.php";
 
 $iddoc = $_REQUEST['iddoc'];
 

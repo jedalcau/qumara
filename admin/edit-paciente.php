@@ -4,10 +4,8 @@
     {
     include "header.php";
     include "../model/model_Paciente.php";
-
     //
     $idPac = $_REQUEST['idPac'];
-
     // Instaciamos clase
     $model_Paciente = new Paciente();
     $data_Paciente = $model_Paciente->buscarPacientes($idPac);
@@ -22,7 +20,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
-                            <form action="controller1/controller_edit_Paciente.php" method="post">
+                            <form action="controller/controller_edit_Paciente.php" method="post">
                                 <div class="row">
                                     <!-- ID PAciente -->
                                     <div class="col-sm-2">
@@ -192,7 +190,7 @@
 
                                 <!-- BOTON REGISTRAR -->
                                 <div class="m-t-20 text-center">
-                                    <button class="btn btn-primary submit-btn">Registrar Paciente</button>
+                                    <button class="btn btn-primary submit-btn">Guardar Paciente</button>
                                 </div>
                             </form>
                         </div>
