@@ -49,10 +49,11 @@
                                             <td><?php echo $fila['locPac']; ?></td>
                                             <!-- Telefono -->
                                             <td><?php echo $fila['telPac']; ?></td>
+
                                             <!-- Estado -->
                                             <td>
                                                 <?php if($fila['estPac'] ==1){ ?>
-                                                <span class="custom-badge status-green">Activo</span>
+                                                <span class="custom-badge status-red">Activo</span>
                                                 <?php }else{ ?>
                                                 <span class="custom-badge status-red">Inactivo</span>
                                                 <?php } ?>

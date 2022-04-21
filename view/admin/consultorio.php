@@ -28,6 +28,7 @@
                                             <th>Nombre Consultorio</th>
                                             <th>Estado</th>
                                             <th class="text-right">Accion</th>
+
                                         </tr>
                                     </thead>
                                     <!-- Cuerpo Tabla -->
@@ -35,14 +36,14 @@
                                     <?php $i =1; while($fila = $mostrar_Consultorio->fetch_array(MYSQLI_ASSOC)){ ?>
                                         <tr>
                                             <!-- NOMBRE -->
-                                            <td><?php $fila['idConsultorio']; echo $fila['nomConsultorio']?></td>
+                                            <td><?php echo $fila['nomCon']?></td>
 
                                             <!-- ESTADO -->
                                             <td>
-                                                <?php if($fila['estConsultorio'] ==1){ ?>
-                                                    <span class="custom-badge status-green">Activo</span>
+                                                <?php if($fila['estCon'] ==1){ ?>
+                                                <span class="custom-badge status-green">Activo</span>
                                                 <?php }else{ ?>
-                                                    <span class="custom-badge status-red">Inactivo</span>
+                                                <span class="custom-badge sta">Inactivo</span>
                                                 <?php } ?>
                                             </td>
 
@@ -51,7 +52,7 @@
                                                 <div class="dropdown dropdown-action">
                                                     <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                                     <div class="dropdown-menu dropdown-menu-right">
-                                                        <a class="dropdown-item" href="edit-consultorio.php?idCon=<?php echo $fila['idConsultorio'];?>"><i class="fa fa-pencil m-r-5"></i>Editar</a>
+                                                        <a class="dropdown-item" href="edit-consultorio.php?idCon=<?php echo $fila['idCon'];?>"><i class="fa fa-pencil m-r-5"></i>Editar</a>
 <!--                                                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_patient"><i class="fa fa-trash-o m-r-5"></i> Delete</a>-->
                                                     </div>
                                                 </div>

@@ -13,7 +13,7 @@ class Acceso extends Conexion
     /* FUNCION VALIDAR ACCESO */
     function validarAcceso($usuAcceso, $claAcceso)
     {
-        $consultar_Acceso = "SELECT IN_ID_PSA AS idPSalud, IN_ID_PAD as idPAdministrativo,IN_NIVEL_ACC AS nivAcceso, TI_ESTADO_ACC as estAcceso FROM T_ACCESO WHERE VC_USUARIO_ACC ='$usuAcceso' AND VC_CLAVE_ACC = MD5('$claAcceso')";
+        $consultar_Acceso = "SELECT IN_ID_ACC AS idAcceso, VC_USUARIO_ACC AS usuAcceso, IN_ID_PSA AS idPSalud, IN_ID_PAD as idPAdministrativo,IN_NIVEL_ACC AS nivAcceso, TI_ESTADO_ACC as estAcceso FROM T_ACCESO WHERE VC_USUARIO_ACC ='$usuAcceso' AND VC_CLAVE_ACC = MD5('$claAcceso')";
         $respuesta_Acceso = $this->conn->ConsultaArray($consultar_Acceso);
         return $respuesta_Acceso;
         mysqli_close($this->conn);

@@ -32,13 +32,13 @@
                                 <!-- Nombre Consultorio -->
                                 <div class="form-group">
                                     <label>Nombre Consultorio</label>
-                                    <input class="form-control" type="text" name="txt_nomConsultorio" id="txt_nomConsultorio" value="<?php echo $data_Consultorio['nomConsultorio']; ?>">
+                                    <input class="form-control" type="text" name="txt_nomConsultorio" id="txt_nomConsultorio" value="<?php echo $data_Consultorio['nomCon']; ?>">
                                 </div>
 
                                 <!-- Descripcion Consultorio -->
                                 <div class="form-group">
                                     <label>Descripcion</label>
-                                    <textarea cols="30" rows="4" class="form-control" name="txt_desConsultorio" id="txt_desConsultorio"><?php echo $data_Consultorio['desConsultorio']; ?></textarea>
+                                    <textarea cols="30" rows="4" class="form-control" name="txt_desConsultorio" id="txt_desConsultorio"><?php echo $data_Consultorio['desCon']; ?></textarea>
                                 </div>
 
                                 <!-- Estado Consultorio -->

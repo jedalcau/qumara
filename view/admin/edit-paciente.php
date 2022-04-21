@@ -141,6 +141,7 @@
                                             </div>
                                         </div>
                                     </div>
+
                                     <!-- ESTADO -->
                                     <div class="col-sm-3">
                                         <div class="form-group">
@@ -152,6 +153,7 @@
                                                 <input class="form-check-input" type="radio" name="rdb_estPaciente" id="product_active" value="<?php echo $data_Paciente['estPac']; ?>" checked>
                                                 <label class="form-check-label" for="product_active">Activo</label>
                                             </div>
+
                                             <!-- Inactivo -->
                                             <div class="form-check form-check-inline">
                                                 <input class="form-check-input" type="radio" name="rdb_estPaciente" id="product_inactive" value="2">

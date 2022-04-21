@@ -13,20 +13,14 @@
         <title>Qumara | Sistema de Gestion de Formatos de Registro Clinico de Usuarios | PIAS</title>
 
         <!-- BOOTSTRAP -->
-        <link rel="shortcut icon" type="image/x-icon" href="../../admin/assets/img/favicon.ico">
-        <link rel="stylesheet" type="text/css" href="../../admin/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../admin/assets/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="../../admin/assets/css/select2.min.css">
-        <link rel="stylesheet" type="text/css" href="../../admin/assets/css/dataTables.bootstrap4.min.css">
-        <link rel="stylesheet" type="text/css" href="../../admin/assets/css/bootstrap-datetimepicker.min.css">
-        <link rel="stylesheet" type="text/css" href="../../admin/assets/css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/select2.min.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 
-        <!-- JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <!--[if lt IE 9]>
-            <script src="../assets/js/php5shiv.min.js"></script>
-            <script src="../assets/js/respond.min.js"></script>
-        <![endif]-->
     </head>
 
     <body>
@@ -37,7 +31,7 @@
                 <!-- Logo Qumara -->
                 <div class="header-left">
                     <a href="index.php" class="logo">
-                        <img src="../../admin/assets/img/logo.png" width="35" height="35" alt="">
+                        <img src="../assets/img/logo.png" width="35" height="35" alt="">
                         <span>Qumara</span>
                     </a>
                 </div>
@@ -131,7 +125,7 @@
                     <li class="nav-item dropdown has-arrow">
                         <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
                             <span class="user-img">
-                                <img class="rounded-circle" src="../../admin/avatar/admin.jpg" width="24" alt="Admin">
+                                <img class="rounded-circle" src="../avatar/admin.jpg" width="24">
                                 <span class="status online"></span>
                             </span>
                             <span>Administrador</span>
@@ -275,6 +269,6 @@
         </script>-->
 <?php
     }else{
-    header("Location: ../index.html");
+    header("Location: ../../index.php");
     }
 ?>

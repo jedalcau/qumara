@@ -34,32 +34,25 @@ class Consultorio
 
     /* FUNCION MOSTRAR DATA CONSULTORIO */
     function mostrarConsultorio(){
-        $mostrar_Consultorio = "SELECT IN_ID_CON AS idConsultorio, VC_NOMBRE_CON AS nomConsultorio, VC_DESCRIPCION_CON AS desConsultorio, TI_ESTADO_CON AS estConsultorio FROM T_CONSULTORIO";
+        $mostrar_Consultorio = "SELECT IN_ID_CON AS idCon, VC_NOMBRE_CON AS nomCon, VC_DESCRIPCION_CON AS desCon, TI_ESTADO_CON AS estCon FROM T_CONSULTORIO";
         $respuesta_Consultorio = $this->conn->ConsultaCon($mostrar_Consultorio);
         return $respuesta_Consultorio;
         mysqli_close($this->conn);
     }
 
     /* FUNCION BUSCAR CONSULTORIO */
-    function buscarConsultorio($idConsultorio){
-        $buscar_Consultorio = "SELECT IN_ID_CON AS idConsultorio, VC_NOMBRE_CON AS nomConsultorio, VC_DESCRIPCION_CON AS desConsultorio, TI_ESTADO_CON AS estConsultorio FROM T_CONSULTORIO WHERE IN_ID_CON =".$idConsultorio;
+    function buscarConsultorio($idCon){
+        $buscar_Consultorio = "SELECT IN_ID_CON AS idCon, VC_NOMBRE_CON AS nomCon, VC_DESCRIPCION_CON AS desCon, TI_ESTADO_CON AS estCon FROM T_CONSULTORIO WHERE IN_ID_CON =".$idCon;
         $respuesta_Consultorio = $this->conn->ConsultaArray($buscar_Consultorio);
         return $respuesta_Consultorio;
         mysqli_close($this->conn);
     }
 
     /* FUNCION MODIFICAR CONSULTORIO */
-    function modificarConsultorio($idConsultorio, $nomConsultorio, $desConsultorio, $estConsultorio){
-        $modificar_Consultorio = "UPDATE T_CONSULTORIO SET VC_NOMBRE_CON = '$nomConsultorio', VC_DESCRIPCION_CON = '$desConsultorio', TI_ESTADO_CON = '$estConsultorio' WHERE IN_ID_CON = ".$idConsultorio;
+    function modificarConsultorio($idCon, $nomCon, $desCon, $estCon){
+        $modificar_Consultorio = "UPDATE T_CONSULTORIO SET VC_NOMBRE_CON = '$nomCon', VC_DESCRIPCION_CON = '$desCon', TI_ESTADO_CON = '$estCon' WHERE IN_ID_CON = ".$idCon;
         $respuesta_Consultorio = $this->conn->ConsultaSin($modificar_Consultorio);
         return $respuesta_Consultorio;
         mysqli_close($this->conn);
-    }
-
-    /* FUNCION ELIMINAR CONSULTORIO */
-    function eliminarConsultorio($idConsultorio){
-        $eliminar_Consultorio = "DELETE FROM T_CONSULTORIO WHERE IN_ID_CON =".$idConsultorio;
-        $respuesta_Consultorio = $this->conn->ConsultaSin($eliminar_Consultorio);
-        return $respuesta_Consultorio;
     }
 }

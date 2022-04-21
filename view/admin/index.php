@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if(isset($_SESSION['usuario'])){
+    if(isset($_SESSION['administrator'])){
         include "header.php";
 //        require "../model/consultas.model.php";
 //        $model_consulta = new Consultas();
