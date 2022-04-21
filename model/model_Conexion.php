@@ -1,6 +1,6 @@
 <?php
 
-class ConexionDB
+class Conexion
 {
 	private $conn;
 

@@ -7,7 +7,7 @@ class Consultorio
 
 	function __construct()
 	{
-		$this->conn = new ConexionDB();
+		$this->conn = new Conexion();
 		return $this->conn;
 	}
 

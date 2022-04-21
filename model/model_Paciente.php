@@ -6,7 +6,7 @@ class Paciente
 
     function __construct()
     {
-        $this->conn = new modelConexionDB();
+        $this->conn = new Conexion();
         return $this->conn;
     }
 

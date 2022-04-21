@@ -23,10 +23,10 @@
             $_SESSION['nomPSalud'] = $datPSalud['nomPSalud'];
             $_SESSION['avaPSalud']    = $datPSalud['avaPSalud'];
 
-            header("Location: ../view/index.php");
+            header("Location: ../view/index.html");
         }else{
 
-            header("Location: ../index.php?msg=1");
+            header("Location: ../index.html?msg=1");
         }
     }else{
         if($resultado_ValidarAcceso['idPAdministrativo'] > 0)
@@ -37,7 +37,7 @@
                 switch($resultado_ValidarAcceso['nivAcceso']) {
                     case 1: # Administrador
                         echo $_SESSION['administrator'] = $resultado_ValidarAcceso['idPAdministrativo'];
-                        header("Location: ../admin/index.php");
+                        header("Location: ../admin/index.html");
                         break;
                     case 3: # Empleado
                         echo "Como Trabajador";

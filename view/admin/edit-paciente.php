@@ -3,7 +3,7 @@
     if(isset($_SESSION['administrator']))
     {
     include "header.php";
-    include "../model/model_Paciente.php";
+    include "../../model/model_Paciente.php";
     //
     $idPac = $_REQUEST['idPac'];
     // Instaciamos clase
@@ -20,7 +20,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
-                            <form action="controller/controller_edit_Paciente.php" method="post">
+                            <form action="../../controller/controller_edit_Paciente.php" method="post">
                                 <div class="row">
                                     <!-- ID PAciente -->
                                     <div class="col-sm-2">

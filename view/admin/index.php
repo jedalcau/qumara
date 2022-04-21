@@ -1,20 +1,20 @@
 <?php
     session_start();
-    if(isset($_SESSION['administrator'])){
+    if(isset($_SESSION['usuario'])){
         include "header.php";
-        require "../model/consultas.model.php";
-        $model_consulta = new Consultas();
+//        require "../model/consultas.model.php";
+//        $model_consulta = new Consultas();
         //$citas = $consulta->Citas5();
 
         // TOTALES
-        $total_atenciones = $model_consulta->Contar_atenciones();
-        $total_pacientes = $model_consulta->Contar_Pacientes();
-        $total_personal_salud = $model_consulta->Contar_PersonalSalud();
-        $total_consultorios = $model_consulta->Contar_Consultorios();
+//        $total_atenciones = $model_consulta->Contar_atenciones();
+//        $total_pacientes = $model_consulta->Contar_Pacientes();
+//        $total_personal_salud = $model_consulta->Contar_PersonalSalud();
+//        $total_consultorios = $model_consulta->Contar_Consultorios();
 
         //DATA LISTAS
         //$lista_pacientes = $model_consulta->Listar_Pacientes();
-        $lista_personal_salud = $model_consulta->Listar_PersonalSalud();
+//        $lista_personal_salud = $model_consulta->Listar_PersonalSalud();
         //$lista_atencion_paciente = $model_consulta->Listar_AtencionPaciente();
 
 ?>
@@ -145,7 +145,7 @@
                             <div class="card">
                                 <!-- HEADER TITLE -->
                                 <div class="card-header">
-                                    <h4 class="card-title d-inline-block">PACIENTES REGISTRADOS</h4> <a href="paciente.php" class="btn btn-primary float-right">Ver Lista</a>
+                                    <h4 class="card-title d-inline-block">PACIENTES REGISTRADOS</h4> <a href="../../admin/paciente.php" class="btn btn-primary float-right">Ver Lista</a>
                                 </div>
                                 <div class="card-body p-0">
                                     <div class="table-responsive">
@@ -195,7 +195,7 @@
                                         <li>
                                             <div class="contact-cont">
                                                 <div class="float-left user-img m-r-10">
-                                                    <a href="#"><img src="assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status offline"></span></a>
+                                                    <a href="#"><img src="../../admin/assets/img/user.jpg" alt="" class="w-40 rounded-circle"><span class="status offline"></span></a>
                                                 </div>
                                                 <div class="contact-info">
                                                     <a href="profile.html" title="John Doe"><span class="contact-name text-ellipsis"><?php echo $fila['doctor'];?></span></a>

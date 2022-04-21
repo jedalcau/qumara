@@ -3,7 +3,7 @@
     if(isset($_SESSION['administrator']))
     {
     include "header.php";
-    include "../model/model_Consultorio.php";
+    include "../../model/model_Consultorio.php";
     //
     $idConsultorio = $_REQUEST['idConsultorio'];
     // Instanciamos la Clase Model Consultorio

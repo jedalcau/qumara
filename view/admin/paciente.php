@@ -3,7 +3,7 @@
     if(isset($_SESSION['administrator']))
     {
     include "header.php";
-    require "../model/model_Paciente.php";
+    require "../../model/model_Paciente.php";
     $model_Paciente = new Paciente();
     $mostrar_Paciente = $model_Paciente->listarPacientes();
 ?>

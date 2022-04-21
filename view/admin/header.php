@@ -14,19 +14,19 @@ if(isset($_SESSION['administrator'])){
         <title>Qumara | Sistema de Gestion de Formatos de Registro Clinico de Usuarios | PIAS</title>
 
         <!-- BOOTSTRAP -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap4.min.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.min.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../../admin/assets/img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../../admin/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../admin/assets/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../../admin/assets/css/select2.min.css">
+        <link rel="stylesheet" type="text/css" href="../../admin/assets/css/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" type="text/css" href="../../admin/assets/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" type="text/css" href="../../admin/assets/css/style.css">
 
         <!-- JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!--[if lt IE 9]>
-            <script src="assets/js/php5shiv.min.js"></script>
-            <script src="assets/js/respond.min.js"></script>
+            <script src="../assets/js/php5shiv.min.js"></script>
+            <script src="../assets/js/respond.min.js"></script>
         <![endif]-->
             <!--<style>
                 .main-wrapper{
@@ -43,7 +43,7 @@ if(isset($_SESSION['administrator'])){
                 <!-- Logo Qumara -->
                 <div class="header-left">
                     <a href="index.php" class="logo">
-                        <img src="assets/img/logo.png" width="35" height="35" alt="">
+                        <img src="../../admin/assets/img/logo.png" width="35" height="35" alt="">
                         <span>Qumara</span>
                     </a>
                 </div>
@@ -137,7 +137,7 @@ if(isset($_SESSION['administrator'])){
                     <li class="nav-item dropdown has-arrow">
                         <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
                             <span class="user-img">
-                                <img class="rounded-circle" src="avatar/admin.jpg" width="24" alt="Admin">
+                                <img class="rounded-circle" src="../../admin/avatar/admin.jpg" width="24" alt="Admin">
                                 <span class="status online"></span>
                             </span>
                             <span>Administrador</span>
@@ -146,7 +146,7 @@ if(isset($_SESSION['administrator'])){
                             <!--<a class="dropdown-item" href="profile.html">Perfil</a>
                             <a class="dropdown-item" href="edit-profile.html">Editar Perfil</a>
                             <a class="dropdown-item" href="settings.html">Configuraciones</a>-->
-                            <a class="dropdown-item" href="../controller/session_close.php">Cerrar Sesion</a>
+                            <a class="dropdown-item" href="../../controller/session_close.php">Cerrar Sesion</a>
                         </div>
                     </li>
                 </ul>
@@ -158,7 +158,7 @@ if(isset($_SESSION['administrator'])){
                         <!--<a class="dropdown-item" href="profile.html">Perfil</a>
                             <a class="dropdown-item" href="edit-profile.html">Editar Perfil</a>
                             <a class="dropdown-item" href="settings.html">Configuraciones</a>-->
-                        <a class="dropdown-item" href="../controller/session_close.php">Cerrar Sesion</a>
+                        <a class="dropdown-item" href="../../controller/session_close.php">Cerrar Sesion</a>
                     </div>
                 </div>
             </div>
@@ -211,22 +211,22 @@ if(isset($_SESSION['administrator'])){
 
                             <!-- CITAS -->
                             <li>
-                                <a href="citas.php"><i class="fa fa-calendar"></i> <span>Citas</span></a>
+                                <a href="../../admin/citas.php"><i class="fa fa-calendar"></i> <span>Citas</span></a>
                             </li>
 
                             <!-- PATIENT LIST -->
                             <li>
-                                <a href="paciente.php"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
+                                <a href="../../admin/paciente.php"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
                             </li>
 
                             <!-- HISTORY LIST -->
                             <li>
-                                <a href="historias.php"><i class="fa fa-edit"></i> <span>Historias</span></a>
+                                <a href="../../admin/historias.php"><i class="fa fa-edit"></i> <span>Historias</span></a>
                             </li>
 
                             <!-- REPOST LIST -->
                             <li>
-                                <a href="reportes.php"><i class="fa fa-book"></i> <span> Reportes </span></a>
+                                <a href="../../admin/reportes.php"><i class="fa fa-book"></i> <span> Reportes </span></a>
                             </li>
                         </ul>
                         <!-- #endregion MENU PERSONAL DE SALUD -->
@@ -236,17 +236,17 @@ if(isset($_SESSION['administrator'])){
                             <li class="menu-title">Recepcionista</li>
                             <!-- APPOINTMENT LIST -->
                             <li>
-                                <a href="citas.php"><i class="fa fa-calendar"></i> <span>Citas</span></a>
+                                <a href="../../admin/citas.php"><i class="fa fa-calendar"></i> <span>Citas</span></a>
                             </li>
 
                             <!-- PATIENT LIST -->
                             <li class="submenu">
-                                <a href="paciente.php"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
+                                <a href="../../admin/paciente.php"><i class="fa fa-wheelchair"></i> <span>Pacientes</span></a>
                             </li>
 
                             <!-- REPORTS LIST -->
                             <li>
-                                <a href="reportes.php"><i class="fa fa-book"></i> <span> Reportes </span></a>
+                                <a href="../../admin/reportes.php"><i class="fa fa-book"></i> <span> Reportes </span></a>
                             </li>
 
                         </ul>

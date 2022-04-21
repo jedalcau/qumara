@@ -3,7 +3,7 @@
     if(isset($_SESSION['administrator']))
     {
     include "header.php";
-    require "../model/model_Consultorio.php";
+    require "../../model/model_Consultorio.php";
 
     $model_Consultorio = new Consultorio();
     $mostrar_Consultorio = $model_Consultorio->mostrarConsultorio();
@@ -109,6 +109,6 @@
 <?php 
     include "footer.php";
     }else{
-        header("Location: ../index.html");
+        header("Location: ../../index.php");
     }
 ?>
