@@ -1,7 +1,6 @@
 <?php
     session_start();
-    if(isset($_SESSION['administrator']))
-    {
+    if(isset($_SESSION['administrator'])){
     include "header.php";
     require "../../model/model_Paciente.php";
     $model_Paciente = new Paciente();
