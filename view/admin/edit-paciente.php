@@ -203,6 +203,6 @@
 <?php
     include "footer.php";
     }else{
-        header("Location: ../index.html");
+        header("Location: ../index.php");
     }
 ?>

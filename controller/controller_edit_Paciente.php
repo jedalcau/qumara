@@ -23,8 +23,8 @@
     $resultado_guardarPaciente = $model_Paciente->modificarPacientes($idPac, $dniPac, $nomPac, $apePac, $fnaPac, $genPac, $emaPac, $telPac, $dirPac, $proPac, $disPac, $locPac, $avaPac, $estPac);
     // evaluamos los resultados
     if ($resultado_guardarPaciente == true){
-        header("Location:../view/consultorio.php");
+        header("Location:../view/admin/paciente.php");
     }else{
-        header("Location:../view/consultorio.php");
+        header("Location:../view/admin/paciente.php");
     }
 ?>

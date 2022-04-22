@@ -53,7 +53,7 @@
                                             <!-- Estado -->
                                             <td>
                                                 <?php if($fila['estPac'] ==1){ ?>
-                                                <span class="custom-badge status-red">Activo</span>
+                                                <span class="custom-badge status-green">Activo</span>
                                                 <?php }else{ ?>
                                                 <span class="custom-badge status-red">Inactivo</span>
                                                 <?php } ?>
