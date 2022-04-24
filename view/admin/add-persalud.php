@@ -8,157 +8,223 @@
                 <div class="content">
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
-                            <h4 class="page-title">Add Doctor</h4>
+                            <h4 class="page-title">Registrar Personal de Salud</h4>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
-                            <form>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label>First Name <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label>Last Name</label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label>Username <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label>Email <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="email">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label>Password</label>
-                                            <input class="form-control" type="password">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label>Confirm Password</label>
-                                            <input class="form-control" type="password">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label>Date of Birth</label>
-                                            <div class="cal-icon">
-                                                <input type="text" class="form-control datetimepicker">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group gender-select">
-                                            <label class="gen-label">Gender:</label>
-                                            <div class="form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" name="gender" class="form-check-input">Male
-                                                </label>
-                                            </div>
-                                            <div class="form-check-inline">
-                                                <label class="form-check-label">
-                                                    <input type="radio" name="gender" class="form-check-input">Female
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="form-group">
-                                                    <label>Address</label>
-                                                    <input type="text" class="form-control ">
+                            <div class="card-box">
+                                <form>
+                                    <!-- Box Datos Personal de Salud -->
+                                    <h4 class="card-title">Datos del Personal</h4>
+                                    <div class="row">
+                                        <!-- Nombres y Apellidos -->
+                                        <div class="col-sm-12">
+                                            <div class="row">
+                                                <!-- Nombres -->
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Nombres <span class="text-danger">*</span></label>
+                                                        <input class="form-control" type="text" name="txt_nomPsalud" id="txt_nomPsalud">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-6 col-lg-3">
-                                                <div class="form-group">
-                                                    <label>Country</label>
-                                                    <select class="form-control select">
-                                                        <option>USA</option>
-                                                        <option>United Kingdom</option>
-                                                    </select>
+
+                                                <!-- Apellidos -->
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Apellidos<span class="text-danger">*</span></label>
+                                                        <input class="form-control" type="text" name="txt_apePsalud" id="txt_apePsalud">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-6 col-lg-3">
-                                                <div class="form-group">
-                                                    <label>City</label>
-                                                    <input type="text" class="form-control">
+
+                                                <!-- Dni -->
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <label>Dni <span class="text-danger">*</span></label>
+                                                        <input class="form-control" type="text" name="txt_dniPsalud">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-6 col-lg-3">
-                                                <div class="form-group">
-                                                    <label>State/Province</label>
-                                                    <select class="form-control select">
-                                                        <option>California</option>
-                                                        <option>Alaska</option>
-                                                        <option>Alabama</option>
-                                                    </select>
+
+                                                <!-- Fecha de NAcimiento -->
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Fecha Nacimiento<span class="text-danger"> *</span></label>
+                                                        <div class="cal-icon">
+                                                            <input type="text" class="form-control datetimepicker" name="dtp_fnaPsalud">
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-6 col-lg-3">
-                                                <div class="form-group">
-                                                    <label>Postal Code</label>
-                                                    <input type="text" class="form-control">
+
+                                                <!-- Genero -->
+                                                <div class="col-sm-3">
+                                                    <div class="form-group gender-select">
+                                                        <label class="gen-label">Genero<span class="text-danger"> *</span></label>
+                                                        <div class="form-check-inline">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" name="rdb_genPaciente" id="rdb_genPsalud"  class="form-check-input" value="MASCULINO">Masculino
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check-inline">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" name="rdb_genPaciente" id="rdb_genPsalud" class="form-check-input" value="FEMENINO">Femenino
+                                                            </label>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label>Phone </label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label>Avatar</label>
-                                            <div class="profile-upload">
-                                                <div class="upload-img">
-                                                    <img alt="" src="assets/img/user.jpg">
+
+                                        <!-- Profesion -->
+                                        <div class="col-sm-12">
+                                            <div class="row">
+                                                <!-- Nombres -->
+                                                <div class="col-sm-9">
+                                                    <div class="form-group">
+                                                        <label>Profesion <span class="text-danger">*</span></label>
+                                                        <input class="form-control" type="text">
+                                                    </div>
                                                 </div>
-                                                <div class="upload-input">
-                                                    <input type="file" class="form-control">
+                                                <!-- Colegiatura -->
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <label>Nª Colegiatura <span class="text-danger">*</span></label>
+                                                        <input class="form-control" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- UBIGEO -->
+                                        <div class="col-sm-12">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <label>Direccion</label>
+                                                        <input type="text" class="form-control ">
+                                                    </div>
+                                                </div>
+
+                                                <!-- Departamento -->
+                                                <div class="col-sm-6 col-md-6 col-lg-4">
+                                                    <div class="form-group">
+                                                        <label>Departamento</label>
+                                                        <input type="text" class="form-control" name="txt_depPsa" id="txt_depPsa">
+                                                    </div>
+                                                </div>
+
+                                                <!-- Provincia -->
+                                                <div class="col-sm-6 col-md-6 col-lg-4">
+                                                    <div class="form-group">
+                                                        <label>Provincia</label>
+                                                        <input type="text" class="form-control" name="txt_proPsa" id="txt_proPsa">
+                                                    </div>
+                                                </div>
+
+                                                <!-- Distrito -->
+                                                <div class="col-sm-6 col-md-6 col-lg-4">
+                                                    <div class="form-group">
+                                                        <label>Distrito</label>
+                                                        <input type="text" class="form-control" name="txt_disPsa" id="txt_disPsa">
+                                                    </div>
+                                                </div>
+
+                                                <!-- Telefono -->
+                                                <div class="col-sm-6 col-md-6 col-lg-2">
+                                                    <div class="form-group">
+                                                        <label>Telefono</label>
+                                                        <input type="text" class="form-control" name="txt_telPsa" id="txt_emaPsa">
+                                                    </div>
+                                                </div>
+
+                                                <!-- Email -->
+                                                <div class="col-sm-6 col-md-6 col-lg-4">
+                                                    <div class="form-group">
+                                                        <label>Email</label>
+                                                        <input type="text" class="form-control" name="txt_emaPsa" id="txt_emaPsa">
+                                                    </div>
+                                                </div>
+
+                                                <!-- Avatar -->
+                                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label>Avatar</label>
+                                                        <div class="profile-upload">
+                                                            <div class="upload-img">
+                                                                <img alt="" src="../assets/img/user.jpg" >
+                                                            </div>
+                                                            <div class="upload-input">
+                                                                <input type="file" class="form-control" name="upi_avaPsalud" id="upi_avaPsalud">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <!-- ESTADO -->
+                                        <div class="col-sm-3">
+                                            <div class="form-group">
+                                                <label class="display-block">Estado <span class="text-danger"> *</span></label>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="rdb_estPsalud" id="rdb_estPsalud_active" value="1" checked>
+                                                    <label class="form-check-label" for="rdb_estPsalud_active">Activo</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="rdb_estPsalud" id="rdb_estPsalud_inactive" value="2">
+                                                    <label class="form-check-label" for="rdb_estPsalud_inactive">Inactivo</label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label>Short Biography</label>
-                                    <textarea class="form-control" rows="3" cols="30"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label class="display-block">Status</label>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="status" id="doctor_active" value="option1" checked>
-                                        <label class="form-check-label" for="doctor_active">
-                                            Active
-                                        </label>
+
+                                    <!-- Box Datos de Acceso -->
+                                    <h4 class="card-title">Datos de Acceso</h4>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Usuario <span class="text-danger"> *</span></label>
+                                                        <input class="form-control" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label>Clave</label>
+                                                        <input class="form-control" type="password">
+                                                    </div>
+                                                </div>
+
+                                                <!-- ESTADO -->
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <label class="display-block">Estado</label>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="rdb_estAcceso" id="rdb_estAcceso_active" value="1" checked>
+                                                            <label class="form-check-label" for="rdb_estAcceso_active">Activo</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="rdb_estAcceso" id="rdb_estAcceso_inactive" value="2">
+                                                            <label class="form-check-label" for="rdb_estAcceso_inactive">Inactivo</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="status" id="doctor_inactive" value="option2">
-                                        <label class="form-check-label" for="doctor_inactive">
-                                            Inactive
-                                        </label>
+
+
+
+
+                                    <!-- Botn Registrar Personal de Salud -->
+                                    <div class="m-t-20 text-center">
+                                        <button class="btn btn-primary submit-btn">Create Doctor</button>
                                     </div>
-                                </div>
-                                <div class="m-t-20 text-center">
-                                    <button class="btn btn-primary submit-btn">Create Doctor</button>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>

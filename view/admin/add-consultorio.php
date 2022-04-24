@@ -16,37 +16,40 @@
                     <!-- CONTENT -->
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2">
-                            <form action="../controller/controller_Consultorio.php" method="post">
-                                <!-- Nombre Consultorio -->
-                                <div class="form-group">
-                                    <label>Nombre Consultorio</label>
-                                    <input class="form-control" type="text" name="txt_nomConsultorio" id="txt_nomConsultorio">
-                                </div>
-
-                                <!-- Descripcion Consultorio -->
-                                <div class="form-group">
-                                    <label>Descripcion</label>
-                                    <textarea cols="30" rows="4" class="form-control" name="txt_desConsultorio" id="txt_desConsultorio"></textarea>
-                                </div>
-
-                                <!-- Estado Consultorio -->
-                                <div class="form-group">
-                                    <label class="display-block">Estado</label>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="rdb_estConsultorio" id="product_active" value="1" checked>
-                                        <label class="form-check-label" for="product_active">Activo</label>
+                            <div class="card-box">
+                                <h4 class="card-title">Datos del Consultorio</h4>
+                                <form action="../../controller/controller_add_Consultorio.php" method="post">
+                                    <!-- Nombre Consultorio -->
+                                    <div class="form-group">
+                                        <label>Nombre Consultorio</label>
+                                        <input class="form-control" type="text" name="txt_nomConsultorio" id="txt_nomConsultorio">
                                     </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="rdb_estConsultorio" id="product_inactive" value="2">
-                                        <label class="form-check-label" for="product_inactive">Inactivo</label>
-                                    </div>
-                                </div>
 
-                                <!-- Boton Crear -->
-                                <div class="m-t-20 text-center">
-                                    <button class="btn btn-primary submit-btn">Registrar Consultorio</button>
-                                </div>
-                            </form>
+                                    <!-- Descripcion Consultorio -->
+                                    <div class="form-group">
+                                        <label>Descripcion</label>
+                                        <textarea cols="30" rows="4" class="form-control" name="txt_desConsultorio" id="txt_desConsultorio"></textarea>
+                                    </div>
+
+                                    <!-- Estado Consultorio -->
+                                    <div class="form-group">
+                                        <label class="display-block">Estado</label>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="rdb_estConsultorio" id="product_active" value="1" checked>
+                                            <label class="form-check-label" for="product_active">Activo</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="rdb_estConsultorio" id="product_inactive" value="2">
+                                            <label class="form-check-label" for="product_inactive">Inactivo</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Boton Crear -->
+                                    <div class="m-t-20 text-center">
+                                        <button class="btn btn-primary submit-btn">Registrar Consultorio</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
