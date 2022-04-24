@@ -25,7 +25,7 @@
                                     <!-- Cabecera Tabla -->
                                     <thead>
                                         <tr>
-                                            <th>Nombre Consultorio</th>
+                                            <th>Consultorio</th>
                                             <th>Estado</th>
                                             <th class="text-right">Accion</th>
 

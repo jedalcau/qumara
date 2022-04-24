@@ -20,7 +20,6 @@
                     </div>
 
                     <div class="row doctor-grid">
-
                         <div class="col-md-4 col-sm-4  col-lg-3">
                             <div class="profile-widget">
                                 <div class="doctor-img">

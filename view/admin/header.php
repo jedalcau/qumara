@@ -86,6 +86,7 @@
                                 <a href="index.php"><i class="fa fa-home"></i> <span>Inicio</span></a>
                             </li>
 
+
                             <!-- PERSONAL LIST -->
                             <li>
                                 <a href="persalud.php"><i class="fa fa-user-md"></i> <span>Personal</span></a>
@@ -104,6 +105,11 @@
                             <!-- CONSULTANT LIST -->
                             <li>
                                 <a href="consultorio.php"><i class="fa fa-hospital-o"></i> <span>Consultorios</span></a>
+                            </li>
+
+                            <!-- JOB LIST -->
+                            <li>
+                                <a href="employees.php"><i class="fa fa-user"></i> <span>Trabajadores</span></a>
                             </li>
 
                             <!-- REPOST LIST -->
