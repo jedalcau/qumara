@@ -153,7 +153,7 @@
 					SuppressOperation 	TRUE
 					IncludeAttribute 	TRUE
 					IncludeOperation 	TRUE
-					location   	(1024, 1024)
+					location   	(1200, 1248)
 					font       	(object Font
 					    size       	9
 					    face       	"Arial"
@@ -165,7 +165,7 @@
 					    default_color 	TRUE)
 					label      	(object ItemLabel
 					    Parent_View 	@1
-					    location   	(1023, 1272)
+					    location   	(1199, 1583)
 					    anchor_loc 	1
 					    nlines     	1
 					    max_width  	568
@@ -176,8 +176,8 @@
 					line_color 	3342489
 					fill_color 	13434879
 					quidu      	"5B273D4803C9"
-					width      	263
-					height     	337
+					width      	394
+					height     	512
 					annotation 	8
 					autoResize 	TRUE)))))
 		    (object Class_Category "Trabajadores del Negocio"
