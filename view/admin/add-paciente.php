@@ -16,7 +16,7 @@
                         <div class="col-lg-8 offset-lg-2">
                             <div class="card-box">
                                 <h4 class="card-title">Datos del Paciente</h4>
-                                <form action="../controller/controller_Paciente.php" method="post">
+                                <form action="../../controller/controller_add_Paciente.php" method="post">
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <div class="row">

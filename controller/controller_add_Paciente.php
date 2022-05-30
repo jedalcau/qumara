@@ -26,8 +26,8 @@
     $resultado_guardarPaciente = $model_Paciente->registrarPacientes($dniPac, $nomPac, $apePac, $fnaPac, $genPac, $emaPac, $telPac, $dirPac, $proPac, $disPac, $locPac, $avaPac, $estPac);
     // evaluamos los resultados
     if ($resultado_guardarPaciente == true){
-        header("Location: ../admin/paciente.php");
+        header("Location: ../view/admin/paciente.php");
     }else{
-        header("Location: ../admin/paciente.php");
+        header("Location: ../view/admin/paciente.php");
     }
 ?>
