@@ -19,6 +19,9 @@ SELECT *
 FROM mysql.user
 WHERE User = 'usr_qumara';
 
+--
+show DATABASES;
+
 -- CREACION DE BASE DE DATOS
 CREATE DATABASE db_qumara;
 
