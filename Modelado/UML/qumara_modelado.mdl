@@ -272,7 +272,7 @@
 			    (object Class "PacienteAsignado"
 				quid       	"5A49CA02002F"
 				stereotype 	"Business Entity")
-			    (object Class "HistoriaClínica"
+			    (object Class "Hist.Clínica"
 				quid       	"5A49CA5C034C"
 				stereotype 	"Business Entity")
 			    (object Class "PacienteAtendido"
@@ -281,10 +281,10 @@
 			    (object Class "PacienteRecetado"
 				quid       	"5A49CA7202EE"
 				stereotype 	"Business Entity")
-			    (object Class "HistoriaAcutalizada"
+			    (object Class "Hist.Actualizada"
 				quid       	"5A49CA7F03AA"
 				stereotype 	"Business Entity")
-			    (object Class "HistoriaGenerada"
+			    (object Class "Hist.Generada"
 				quid       	"5A49CC470139"
 				stereotype 	"Business Entity")
 			    (object Class "RecetaGenerado"
@@ -299,7 +299,7 @@
 			    (object Class "ConsultaRegistrado"
 				quid       	"5A49C45F01D4"
 				stereotype 	"Business Entity")
-			    (object Class "HistoriaEncontrado"
+			    (object Class "Hist.Encontrado"
 				quid       	"5A49C4870157"
 				stereotype 	"Business Entity")
 			    (object Class "Paciente"
@@ -355,7 +355,7 @@
 					quidu      	"5A49CA02002F"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelado del Negocio::Entidades del Negcio::HistoriaClínica" @5
+				    (object ClassView "Class" "Use Case View::Modelado del Negocio::Entidades del Negcio::Hist.Clínica" @5
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -378,7 +378,7 @@
 					    nlines     	2
 					    max_width  	754
 					    justify    	0
-					    label      	"HistoriaClínica")
+					    label      	"Hist.Clínica")
 					icon       	"Business Entity"
 					icon_style 	"Icon"
 					line_color 	3342489
@@ -448,7 +448,7 @@
 					quidu      	"5A49CA7202EE"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelado del Negocio::Entidades del Negcio::HistoriaAcutalizada" @8
+				    (object ClassView "Class" "Use Case View::Modelado del Negocio::Entidades del Negcio::Hist.Actualizada" @8
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -471,7 +471,7 @@
 					    nlines     	1
 					    max_width  	763
 					    justify    	0
-					    label      	"HistoriaAcutalizada")
+					    label      	"Hist.Actualizada")
 					icon       	"Business Entity"
 					icon_style 	"Icon"
 					line_color 	3342489
@@ -479,7 +479,7 @@
 					quidu      	"5A49CA7F03AA"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelado del Negocio::Entidades del Negcio::HistoriaGenerada" @9
+				    (object ClassView "Class" "Use Case View::Modelado del Negocio::Entidades del Negcio::Hist.Generada" @9
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -502,7 +502,7 @@
 					    nlines     	1
 					    max_width  	767
 					    justify    	0
-					    label      	"HistoriaGenerada")
+					    label      	"Hist.Generada")
 					icon       	"Business Entity"
 					icon_style 	"Icon"
 					line_color 	3342489
@@ -634,7 +634,7 @@
 					quidu      	"5A49C45F01D4"
 					annotation 	8
 					autoResize 	TRUE)
-				    (object ClassView "Class" "Use Case View::Modelado del Negocio::Entidades del Negcio::HistoriaEncontrado" @14
+				    (object ClassView "Class" "Use Case View::Modelado del Negocio::Entidades del Negcio::Hist.Encontrado" @14
 					ShowCompartmentStereotypes 	TRUE
 					SuppressAttribute 	TRUE
 					SuppressOperation 	TRUE
@@ -657,7 +657,7 @@
 					    nlines     	1
 					    max_width  	751
 					    justify    	0
-					    label      	"HistoriaEncontrado")
+					    label      	"Hist.Encontrado")
 					icon       	"Business Entity"
 					icon_style 	"Icon"
 					line_color 	3342489
@@ -867,14 +867,14 @@
 				    objects    	(list Objects
 					(object Object "$UNNAMED$15"
 					    quid       	"5A49C4220214"
-					    class      	"Use Case View::Modelado del Negocio::Entidades del Negcio::HistoriaClínica"
+					    class      	"Use Case View::Modelado del Negocio::Entidades del Negcio::Hist.Clínica"
 					    quidu      	"5A49CA5C034C"
 					    persistence 	"Transient"
 					    creationObj 	FALSE
 					    multi      	FALSE)
 					(object Object "$UNNAMED$16"
 					    quid       	"5A49C46A039A"
-					    class      	"Use Case View::Modelado del Negocio::Entidades del Negcio::HistoriaGenerada"
+					    class      	"Use Case View::Modelado del Negocio::Entidades del Negcio::Hist.Generada"
 					    quidu      	"5A49CC470139"
 					    persistence 	"Transient"
 					    creationObj 	FALSE
@@ -902,7 +902,7 @@
 					    multi      	FALSE)
 					(object Object "$UNNAMED$20"
 					    quid       	"5A49C559034C"
-					    class      	"Use Case View::Modelado del Negocio::Entidades del Negcio::HistoriaAcutalizada"
+					    class      	"Use Case View::Modelado del Negocio::Entidades del Negcio::Hist.Actualizada"
 					    quidu      	"5A49CA7F03AA"
 					    persistence 	"Transient"
 					    creationObj 	FALSE
@@ -1923,7 +1923,7 @@
 							location   	(1840, 334)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	960
+							max_width  	969
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -1963,7 +1963,7 @@
 							location   	(1088, 1710)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	960
+							max_width  	969
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -2003,7 +2003,7 @@
 							location   	(1792, 3006)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	960
+							max_width  	966
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -2043,7 +2043,7 @@
 							location   	(3419, 2046)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	960
+							max_width  	973
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -2083,7 +2083,7 @@
 							location   	(2704, 366)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	960
+							max_width  	966
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -2123,7 +2123,7 @@
 							location   	(3216, 1198)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	960
+							max_width  	966
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -2163,7 +2163,7 @@
 							location   	(3264, 1566)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	960
+							max_width  	966
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -2203,7 +2203,7 @@
 							location   	(2704, 2862)
 							anchor_loc 	1
 							nlines     	2
-							max_width  	960
+							max_width  	966
 							justify    	0
 							label      	"")
 						    icon       	"Business Entity"
@@ -2241,7 +2241,7 @@
 							supplier   	"$UNNAMED$24"
 							quidu      	"5A49C80603C9"
 							messages   	(list Messages
-							    (object Message "Entrega documento DNI"
+							    (object Message "1:Entrega documento DNI"
 								quid       	"5A49C87101F5"
 								frequency  	"Aperiodic"
 								synchronization 	"Simple"
@@ -2250,7 +2250,7 @@
 								ordinal    	0
 								quidu      	"000000000000"
 								creation   	FALSE)
-							    (object Message "Solicita medicamentos"
+							    (object Message "12:Solicita medicamentos"
 								quid       	"5A49C5BB031C"
 								frequency  	"Aperiodic"
 								synchronization 	"Simple"
@@ -2259,7 +2259,7 @@
 								ordinal    	11
 								quidu      	"000000000000"
 								creation   	FALSE)
-							    (object Message "Entregra medicamentos"
+							    (object Message "13:Entregra medicamentos"
 								quid       	"5A49C5DB038A"
 								frequency  	"Aperiodic"
 								synchronization 	"Simple"
@@ -2285,7 +2285,7 @@
 							supplier   	"$UNNAMED$24"
 							quidu      	"5A49C80603C9"
 							messages   	(list Messages
-							    (object Message "Verifica registro Paciente"
+							    (object Message "3:Verifica registro Paciente"
 								quid       	"5A49C8DC02DE"
 								frequency  	"Aperiodic"
 								synchronization 	"Simple"
@@ -2294,7 +2294,7 @@
 								ordinal    	2
 								quidu      	"000000000000"
 								creation   	FALSE)
-							    (object Message "Recepciona DNI Paciente"
+							    (object Message "2:Recepciona DNI Paciente"
 								quid       	"5A49C0A3029F"
 								frequency  	"Aperiodic"
 								synchronization 	"Simple"
@@ -2308,7 +2308,7 @@
 							supplier   	"$UNNAMED$25"
 							quidu      	"5A49C81A0261"
 							messages   	(list Messages
-							    (object Message "Deriva Historia Clinica del Paciente"
+							    (object Message "5:Deriva Historia Clinica del Paciente"
 								quid       	"5A49C96F0197"
 								frequency  	"Aperiodic"
 								synchronization 	"Simple"
@@ -2318,12 +2318,12 @@
 								quidu      	"000000000000"
 								creation   	FALSE)))
 						    (object Link
-							quid       	"5A49C365036B"
+							quid       	"5B273F730252"
 							supplier   	"$UNNAMED$26"
-							quidu      	"5A49C3590399"
+							quidu      	"5B273F4B0233"
 							messages   	(list Messages
-							    (object Message "Busca Historia del Paciente"
-								quid       	"5A49C365036C"
+							    (object Message "4:Busca Historia del Paciente"
+								quid       	"5B273F730253"
 								frequency  	"Aperiodic"
 								synchronization 	"Simple"
 								dir        	"FromClientToSupplier"
@@ -2344,7 +2344,7 @@
 							supplier   	"$UNNAMED$27"
 							quidu      	"5A49C4DE002E"
 							messages   	(list Messages
-							    (object Message "Toma atención de Paciente"
+							    (object Message "6:Toma atención de Paciente"
 								quid       	"5A49C4E302EE"
 								frequency  	"Aperiodic"
 								synchronization 	"Simple"
@@ -2358,7 +2358,7 @@
 							supplier   	"$UNNAMED$28"
 							quidu      	"5A49C4C203D8"
 							messages   	(list Messages
-							    (object Message "Registra consulta del Paciente"
+							    (object Message "7:Registra consulta del Paciente"
 								quid       	"5A49C4CA0232"
 								frequency  	"Aperiodic"
 								synchronization 	"Simple"
@@ -2372,7 +2372,7 @@
 							supplier   	"$UNNAMED$29"
 							quidu      	"5A49C4F10157"
 							messages   	(list Messages
-							    (object Message "Genera Receta"
+							    (object Message "8:Genera Receta"
 								quid       	"5A49C4F80272"
 								frequency  	"Aperiodic"
 								synchronization 	"Simple"
@@ -2386,7 +2386,7 @@
 							supplier   	"$UNNAMED$30"
 							quidu      	"5A49C52D006D"
 							messages   	(list Messages
-							    (object Message "Actualiza Historia Clinica del Paciente"
+							    (object Message "9:Actualiza Historia Clinica del Paciente"
 								quid       	"5A49C53501B6"
 								frequency  	"Aperiodic"
 								synchronization 	"Simple"
@@ -2404,7 +2404,7 @@
 							supplier   	"$UNNAMED$31"
 							quidu      	"5A49C73200FA"
 							messages   	(list Messages
-							    (object Message "Entrega receta"
+							    (object Message "10:Entrega receta"
 								quid       	"5A49C76900EB"
 								frequency  	"Aperiodic"
 								synchronization 	"Simple"
@@ -2415,13 +2415,6 @@
 								creation   	FALSE))))
 						class      	"Use Case View::Modelado del Negocio::Trabajadores del Negocio::TN2_Especialista"
 						quidu      	"5B27D68A0213"
-						persistence 	"Transient"
-						creationObj 	FALSE
-						multi      	FALSE)
-					    (object Object "$UNNAMED$26"
-						quid       	"5A49C3590399"
-						class      	"Use Case View::Modelado del Negocio::Entidades del Negcio::HistoriaClínica"
-						quidu      	"5A49CA5C034C"
 						persistence 	"Transient"
 						creationObj 	FALSE
 						multi      	FALSE)
@@ -2448,7 +2441,7 @@
 						multi      	FALSE)
 					    (object Object "$UNNAMED$30"
 						quid       	"5A49C52D006D"
-						class      	"Use Case View::Modelado del Negocio::Entidades del Negcio::HistoriaAcutalizada"
+						class      	"Use Case View::Modelado del Negocio::Entidades del Negcio::Hist.Actualizada"
 						quidu      	"5A49CA7F03AA"
 						persistence 	"Transient"
 						creationObj 	FALSE
@@ -2461,8 +2454,8 @@
 							supplier   	"$UNNAMED$23"
 							quidu      	"5A49C7FE0139"
 							messages   	(list Messages
-							    (object Message "Recibe receta médica"
-								quid       	"5A49C78903C8"
+							    (object Message "11: Recibe receta médica"
+								quid       	"5B273E5302A0"
 								frequency  	"Aperiodic"
 								synchronization 	"Simple"
 								dir        	"FromClientToSupplier"
@@ -2472,6 +2465,13 @@
 								creation   	FALSE))))
 						class      	"Use Case View::Modelado del Negocio::Entidades del Negcio::RecetaEntregado"
 						quidu      	"5A49CCD70010"
+						persistence 	"Transient"
+						creationObj 	FALSE
+						multi      	FALSE)
+					    (object Object "$UNNAMED$26"
+						quid       	"5B273F4B0233"
+						class      	"Use Case View::Modelado del Negocio::Entidades del Negcio::Hist.Encontrado"
+						quidu      	"5A49C4870157"
 						persistence 	"Transient"
 						creationObj 	FALSE
 						multi      	FALSE))))
@@ -2484,7 +2484,7 @@
 					max_height 	28350
 					max_width  	21600
 					origin_x   	0
-					origin_y   	0
+					origin_y   	1222
 					items      	(list diagram_item_list
 					    (object InterObjView "$UNNAMED$23" @80
 						location   	(256, 240)
@@ -2511,41 +2511,41 @@
 						fill_color 	13434879
 						quidu      	"5A49C7FE0139"
 						width      	201
-						height     	2868
+						height     	3492
 						icon_height 	258
 						icon_width 	201
 						icon_y_offset 	0
 						annotation 	1
 						Focus_Of_Control 	(object Focus_Of_Control "" @81
-						    location   	(256, 560)
+						    location   	(256, 592)
 						    line_color 	3342489
 						    InterObjView 	@80
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE)
 						Focus_Of_Control 	(object Focus_Of_Control "" @82
-						    location   	(256, 2464)
+						    location   	(256, 3008)
 						    line_color 	3342489
 						    InterObjView 	@80
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE)
 						Focus_Of_Control 	(object Focus_Of_Control "" @83
-						    location   	(256, 2688)
+						    location   	(256, 3264)
 						    line_color 	3342489
 						    InterObjView 	@80
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE)
 						Focus_Of_Control 	(object Focus_Of_Control "" @84
-						    location   	(256, 2928)
+						    location   	(256, 3552)
 						    line_color 	3342489
 						    InterObjView 	@80
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE))
 					    (object InterObjView "$UNNAMED$24" @85
-						location   	(800, 224)
+						location   	(784, 224)
 						font       	(object Font
 						    size       	12
 						    face       	"JetBrains Mono"
@@ -2557,10 +2557,10 @@
 						    default_color 	TRUE)
 						label      	(object ItemLabel
 						    Parent_View 	@85
-						    location   	(800, 364)
+						    location   	(784, 364)
 						    anchor_loc 	1
 						    nlines     	2
-						    max_width  	466
+						    max_width  	873
 						    justify    	0
 						    label      	"")
 						icon       	"Business Worker"
@@ -2568,77 +2568,77 @@
 						line_color 	3342489
 						fill_color 	13434879
 						quidu      	"5A49C80603C9"
-						width      	478
-						height     	2884
+						width      	291
+						height     	3508
 						icon_height 	289
 						icon_width 	291
 						icon_y_offset 	0
 						annotation 	1
 						Focus_Of_Control 	(object Focus_Of_Control "" @86
-						    location   	(800, 560)
+						    location   	(784, 592)
 						    line_color 	3342489
 						    InterObjView 	@85
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE)
 						Focus_Of_Control 	(object Focus_Of_Control "" @87
-						    location   	(800, 800)
+						    location   	(784, 864)
 						    line_color 	3342489
 						    InterObjView 	@85
 						    height     	92
 						    y_coord    	2
 						    Nested     	FALSE)
 						Focus_Of_Control 	(object Focus_Of_Control "" @88
-						    location   	(800, 832)
+						    location   	(784, 896)
 						    line_color 	3342489
 						    InterObjView 	@85
 						    height     	90
 						    y_coord    	0
 						    Nested     	TRUE)
 						Focus_Of_Control 	(object Focus_Of_Control "" @89
-						    location   	(800, 976)
+						    location   	(784, 1184)
 						    line_color 	3342489
 						    InterObjView 	@85
 						    height     	92
 						    y_coord    	2
 						    Nested     	FALSE)
 						Focus_Of_Control 	(object Focus_Of_Control "" @90
-						    location   	(800, 1008)
+						    location   	(784, 1216)
 						    line_color 	3342489
 						    InterObjView 	@85
 						    height     	90
 						    y_coord    	0
 						    Nested     	TRUE)
 						Focus_Of_Control 	(object Focus_Of_Control "" @91
-						    location   	(800, 1264)
+						    location   	(784, 1456)
 						    line_color 	3342489
 						    InterObjView 	@85
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE)
 						Focus_Of_Control 	(object Focus_Of_Control "" @92
-						    location   	(800, 1392)
+						    location   	(784, 1744)
 						    line_color 	3342489
 						    InterObjView 	@85
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE)
 						Focus_Of_Control 	(object Focus_Of_Control "" @93
-						    location   	(800, 2688)
+						    location   	(784, 3264)
 						    line_color 	3342489
 						    InterObjView 	@85
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE)
 						Focus_Of_Control 	(object Focus_Of_Control "" @94
-						    location   	(800, 2928)
+						    location   	(784, 3552)
 						    line_color 	3342489
 						    InterObjView 	@85
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE))
 					    (object InterObjView "$UNNAMED$25" @95
-						location   	(1424, 256)
+						location   	(1344, 272)
 						font       	(object Font
 						    size       	12
 						    face       	"JetBrains Mono"
@@ -2650,7 +2650,7 @@
 						    default_color 	TRUE)
 						label      	(object ItemLabel
 						    Parent_View 	@95
-						    location   	(1424, 364)
+						    location   	(1344, 364)
 						    anchor_loc 	1
 						    nlines     	2
 						    max_width  	873
@@ -2662,55 +2662,55 @@
 						fill_color 	13434879
 						quidu      	"5A49C81A0261"
 						width      	291
-						height     	2852
+						height     	3460
 						icon_height 	289
 						icon_width 	291
 						icon_y_offset 	0
 						annotation 	1
 						Focus_Of_Control 	(object Focus_Of_Control "" @96
-						    location   	(1424, 1392)
+						    location   	(1344, 1744)
 						    line_color 	3342489
 						    InterObjView 	@95
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE)
 						Focus_Of_Control 	(object Focus_Of_Control "" @97
-						    location   	(1424, 1600)
+						    location   	(1344, 1936)
 						    line_color 	3342489
 						    InterObjView 	@95
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE)
 						Focus_Of_Control 	(object Focus_Of_Control "" @98
-						    location   	(1424, 1792)
+						    location   	(1344, 2176)
 						    line_color 	3342489
 						    InterObjView 	@95
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE)
 						Focus_Of_Control 	(object Focus_Of_Control "" @99
-						    location   	(1424, 1952)
+						    location   	(1344, 2368)
 						    line_color 	3342489
 						    InterObjView 	@95
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE)
 						Focus_Of_Control 	(object Focus_Of_Control "" @100
-						    location   	(1424, 2144)
+						    location   	(1344, 2624)
 						    line_color 	3342489
 						    InterObjView 	@95
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE)
 						Focus_Of_Control 	(object Focus_Of_Control "" @101
-						    location   	(1424, 2320)
+						    location   	(1344, 2816)
 						    line_color 	3342489
 						    InterObjView 	@95
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE))
 					    (object InterObjView "$UNNAMED$26" @102
-						location   	(2528, 224)
+						location   	(1952, 224)
 						font       	(object Font
 						    size       	12
 						    face       	"JetBrains Mono"
@@ -2722,32 +2722,32 @@
 						    default_color 	TRUE)
 						label      	(object ItemLabel
 						    Parent_View 	@102
-						    location   	(2528, 265)
+						    location   	(1952, 257)
 						    anchor_loc 	1
 						    nlines     	2
-						    max_width  	786
+						    max_width  	750
 						    justify    	0
 						    label      	"")
 						icon       	"Business Entity"
 						icon_style 	"Icon"
 						line_color 	3342489
 						fill_color 	13434879
-						quidu      	"5A49C3590399"
-						width      	262
-						height     	2884
-						icon_height 	190
-						icon_width 	262
+						quidu      	"5B273F4B0233"
+						width      	300
+						height     	3508
+						icon_height 	178
+						icon_width 	250
 						icon_y_offset 	0
 						annotation 	1
 						Focus_Of_Control 	(object Focus_Of_Control "" @103
-						    location   	(2528, 1264)
+						    location   	(1952, 1456)
 						    line_color 	3342489
 						    InterObjView 	@102
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE))
 					    (object InterObjView "$UNNAMED$27" @104
-						location   	(3216, 224)
+						location   	(2592, 224)
 						font       	(object Font
 						    size       	12
 						    face       	"JetBrains Mono"
@@ -2759,7 +2759,7 @@
 						    default_color 	TRUE)
 						label      	(object ItemLabel
 						    Parent_View 	@104
-						    location   	(3216, 265)
+						    location   	(2592, 265)
 						    anchor_loc 	1
 						    nlines     	2
 						    max_width  	786
@@ -2771,20 +2771,20 @@
 						fill_color 	13434879
 						quidu      	"5A49C4DE002E"
 						width      	262
-						height     	2884
+						height     	3508
 						icon_height 	190
 						icon_width 	262
 						icon_y_offset 	0
 						annotation 	1
 						Focus_Of_Control 	(object Focus_Of_Control "" @105
-						    location   	(3216, 1600)
+						    location   	(2592, 1936)
 						    line_color 	3342489
 						    InterObjView 	@104
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE))
 					    (object InterObjView "$UNNAMED$28" @106
-						location   	(3968, 224)
+						location   	(3312, 224)
 						font       	(object Font
 						    size       	12
 						    face       	"JetBrains Mono"
@@ -2796,7 +2796,7 @@
 						    default_color 	TRUE)
 						label      	(object ItemLabel
 						    Parent_View 	@106
-						    location   	(3968, 265)
+						    location   	(3312, 265)
 						    anchor_loc 	1
 						    nlines     	2
 						    max_width  	786
@@ -2808,20 +2808,20 @@
 						fill_color 	13434879
 						quidu      	"5A49C4C203D8"
 						width      	262
-						height     	2884
+						height     	3508
 						icon_height 	190
 						icon_width 	262
 						icon_y_offset 	0
 						annotation 	1
 						Focus_Of_Control 	(object Focus_Of_Control "" @107
-						    location   	(3968, 1792)
+						    location   	(3312, 2176)
 						    line_color 	3342489
 						    InterObjView 	@106
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE))
 					    (object InterObjView "$UNNAMED$29" @108
-						location   	(4704, 224)
+						location   	(3952, 224)
 						font       	(object Font
 						    size       	12
 						    face       	"JetBrains Mono"
@@ -2833,7 +2833,7 @@
 						    default_color 	TRUE)
 						label      	(object ItemLabel
 						    Parent_View 	@108
-						    location   	(4704, 265)
+						    location   	(3952, 265)
 						    anchor_loc 	1
 						    nlines     	2
 						    max_width  	786
@@ -2845,20 +2845,20 @@
 						fill_color 	13434879
 						quidu      	"5A49C4F10157"
 						width      	262
-						height     	2884
+						height     	3508
 						icon_height 	190
 						icon_width 	262
 						icon_y_offset 	0
 						annotation 	1
 						Focus_Of_Control 	(object Focus_Of_Control "" @109
-						    location   	(4704, 1952)
+						    location   	(3952, 2368)
 						    line_color 	3342489
 						    InterObjView 	@108
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE))
 					    (object InterObjView "$UNNAMED$30" @110
-						location   	(5440, 224)
+						location   	(4560, 224)
 						font       	(object Font
 						    size       	12
 						    face       	"JetBrains Mono"
@@ -2870,10 +2870,10 @@
 						    default_color 	TRUE)
 						label      	(object ItemLabel
 						    Parent_View 	@110
-						    location   	(5440, 265)
+						    location   	(4560, 265)
 						    anchor_loc 	1
 						    nlines     	2
-						    max_width  	786
+						    max_width  	591
 						    justify    	0
 						    label      	"")
 						icon       	"Business Entity"
@@ -2881,21 +2881,21 @@
 						line_color 	3342489
 						fill_color 	13434879
 						quidu      	"5A49C52D006D"
-						width      	262
-						height     	2884
+						width      	602
+						height     	3508
 						icon_height 	190
 						icon_width 	262
 						icon_y_offset 	0
 						annotation 	1
 						Focus_Of_Control 	(object Focus_Of_Control "" @111
-						    location   	(5440, 2144)
+						    location   	(4560, 2624)
 						    line_color 	3342489
 						    InterObjView 	@110
 						    height     	90
 						    y_coord    	0
 						    Nested     	FALSE))
 					    (object InterObjView "$UNNAMED$31" @112
-						location   	(6176, 224)
+						location   	(5184, 224)
 						font       	(object Font
 						    size       	12
 						    face       	"JetBrains Mono"
@@ -2907,7 +2907,7 @@
 						    default_color 	TRUE)
 						label      	(object ItemLabel
 						    Parent_View 	@112
-						    location   	(6176, 265)
+						    location   	(5184, 265)
 						    anchor_loc 	1
 						    nlines     	2
 						    max_width  	786
@@ -2919,20 +2919,20 @@
 						fill_color 	13434879
 						quidu      	"5A49C73200FA"
 						width      	262
-						height     	2884
+						height     	3508
 						icon_height 	190
 						icon_width 	262
 						icon_y_offset 	0
 						annotation 	1
 						Focus_Of_Control 	(object Focus_Of_Control "" @113
-						    location   	(6176, 2320)
+						    location   	(5184, 2816)
 						    line_color 	3342489
 						    InterObjView 	@112
-						    height     	232
-						    y_coord    	142
+						    height     	282
+						    y_coord    	192
 						    Nested     	FALSE))
-					    (object InterMessView "Entrega documento DNI" @114
-						location   	(16, 560)
+					    (object InterMessView "1:Entrega documento DNI" @114
+						location   	(16, 592)
 						font       	(object Font
 						    size       	10
 						    face       	"JetBrains Mono"
@@ -2944,7 +2944,7 @@
 						    default_color 	TRUE)
 						label      	(object SegLabel @115
 						    Parent_View 	@114
-						    location   	(527, 518)
+						    location   	(519, 550)
 						    font       	(object Font
 							size       	12
 							face       	"JetBrains Mono"
@@ -2957,9 +2957,9 @@
 						    quidu      	"5A49C87101F5"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	662
+						    max_width  	724
 						    justify    	0
-						    label      	"Entrega documento DNI"
+						    label      	"1:Entrega documento DNI"
 						    pctDist    	0.499055
 						    height     	43
 						    orientation 	0)
@@ -2968,11 +2968,11 @@
 						supplier   	@85
 						Focus_Src  	@81
 						Focus_Entry 	@86
-						origin     	(271, 560)
-						terminus   	(784, 560)
+						origin     	(271, 592)
+						terminus   	(768, 592)
 						ordinal    	0)
-					    (object SelfMessView "Verifica registro Paciente" @116
-						location   	(16, 976)
+					    (object SelfMessView "3:Verifica registro Paciente" @116
+						location   	(16, 1184)
 						font       	(object Font
 						    size       	12
 						    face       	"JetBrains Mono"
@@ -2984,7 +2984,7 @@
 						    default_color 	TRUE)
 						label      	(object SegLabel @117
 						    Parent_View 	@116
-						    location   	(875, 1045)
+						    location   	(857, 1147)
 						    font       	(object Font
 							size       	12
 							face       	"JetBrains Mono"
@@ -2997,22 +2997,22 @@
 						    quidu      	"5A49C8DC02DE"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	818
+						    max_width  	880
 						    justify    	0
-						    label      	"Verifica registro Paciente"
-						    pctDist    	0.393333
-						    height     	69
-						    orientation 	1)
+						    label      	"3:Verifica registro Paciente"
+						    pctDist    	0.386667
+						    height     	38
+						    orientation 	0)
 						line_color 	3342489
 						client     	@85
 						supplier   	@85
 						Focus_Src  	@89
 						Focus_Entry 	@90
-						origin     	(816, 976)
-						terminus   	(966, 976)
+						origin     	(800, 1184)
+						terminus   	(950, 1184)
 						ordinal    	2)
-					    (object InterMessView "Deriva Historia Clinica del Paciente" @118
-						location   	(16, 1392)
+					    (object InterMessView "5:Deriva Historia Clinica del Paciente" @118
+						location   	(16, 1744)
 						font       	(object Font
 						    size       	12
 						    face       	"JetBrains Mono"
@@ -3024,7 +3024,7 @@
 						    default_color 	TRUE)
 						label      	(object SegLabel @119
 						    Parent_View 	@118
-						    location   	(1127, 1414)
+						    location   	(1119, 1704)
 						    font       	(object Font
 							size       	12
 							face       	"JetBrains Mono"
@@ -3037,22 +3037,22 @@
 						    quidu      	"5A49C96F0197"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	1126
+						    max_width  	1190
 						    justify    	0
-						    label      	"Deriva Historia Clinica del Paciente"
-						    pctDist    	0.526138
-						    height     	22
-						    orientation 	1)
+						    label      	"5:Deriva Historia Clinica del Paciente"
+						    pctDist    	0.605396
+						    height     	41
+						    orientation 	0)
 						line_color 	3342489
 						client     	@85
 						supplier   	@95
 						Focus_Src  	@92
 						Focus_Entry 	@96
-						origin     	(815, 1392)
-						terminus   	(1408, 1392)
+						origin     	(799, 1744)
+						terminus   	(1328, 1744)
 						ordinal    	4)
-					    (object SelfMessView "Recepciona DNI Paciente" @120
-						location   	(16, 800)
+					    (object SelfMessView "2:Recepciona DNI Paciente" @120
+						location   	(16, 864)
 						font       	(object Font
 						    size       	12
 						    face       	"JetBrains Mono"
@@ -3064,7 +3064,7 @@
 						    default_color 	TRUE)
 						label      	(object SegLabel @121
 						    Parent_View 	@120
-						    location   	(891, 757)
+						    location   	(875, 821)
 						    font       	(object Font
 							size       	12
 							face       	"JetBrains Mono"
@@ -3077,9 +3077,9 @@
 						    quidu      	"5A49C0A3029F"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	724
+						    max_width  	786
 						    justify    	0
-						    label      	"Recepciona DNI Paciente"
+						    label      	"2:Recepciona DNI Paciente"
 						    pctDist    	0.500000
 						    height     	44
 						    orientation 	0)
@@ -3088,11 +3088,11 @@
 						supplier   	@85
 						Focus_Src  	@87
 						Focus_Entry 	@88
-						origin     	(816, 800)
-						terminus   	(966, 800)
+						origin     	(800, 864)
+						terminus   	(950, 864)
 						ordinal    	1)
-					    (object InterMessView "Busca Historia del Paciente" @122
-						location   	(16, 1264)
+					    (object InterMessView "7:Registra consulta del Paciente" @122
+						location   	(16, 2176)
 						font       	(object Font
 						    size       	12
 						    face       	"JetBrains Mono"
@@ -3104,47 +3104,7 @@
 						    default_color 	TRUE)
 						label      	(object SegLabel @123
 						    Parent_View 	@122
-						    location   	(1662, 1221)
-						    font       	(object Font
-							size       	12
-							face       	"JetBrains Mono"
-							bold       	FALSE
-							italics    	FALSE
-							underline  	FALSE
-							strike     	FALSE
-							color      	0
-							default_color 	TRUE)
-						    quidu      	"5A49C365036C"
-						    anchor_loc 	1
-						    nlines     	1
-						    max_width  	848
-						    justify    	0
-						    label      	"Busca Historia del Paciente"
-						    pctDist    	0.499560
-						    height     	44
-						    orientation 	0)
-						line_color 	3342489
-						client     	@85
-						supplier   	@102
-						Focus_Src  	@91
-						Focus_Entry 	@103
-						origin     	(815, 1264)
-						terminus   	(2512, 1264)
-						ordinal    	3)
-					    (object InterMessView "Registra consulta del Paciente" @124
-						location   	(16, 1792)
-						font       	(object Font
-						    size       	12
-						    face       	"JetBrains Mono"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object SegLabel @125
-						    Parent_View 	@124
-						    location   	(2694, 1751)
+						    location   	(2326, 2137)
 						    font       	(object Font
 							size       	12
 							face       	"JetBrains Mono"
@@ -3157,22 +3117,22 @@
 						    quidu      	"5A49C4CA0232"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	942
+						    max_width  	1002
 						    justify    	0
-						    label      	"Registra consulta del Paciente"
-						    pctDist    	0.499685
-						    height     	42
+						    label      	"7:Registra consulta del Paciente"
+						    pctDist    	0.499226
+						    height     	40
 						    orientation 	0)
 						line_color 	3342489
 						client     	@95
 						supplier   	@106
 						Focus_Src  	@98
 						Focus_Entry 	@107
-						origin     	(1439, 1792)
-						terminus   	(3952, 1792)
+						origin     	(1359, 2176)
+						terminus   	(3296, 2176)
 						ordinal    	6)
-					    (object InterMessView "Toma atención de Paciente" @126
-						location   	(16, 1600)
+					    (object InterMessView "6:Toma atención de Paciente" @124
+						location   	(16, 1936)
 						font       	(object Font
 						    size       	12
 						    face       	"JetBrains Mono"
@@ -3182,9 +3142,9 @@
 						    strike     	FALSE
 						    color      	0
 						    default_color 	TRUE)
-						label      	(object SegLabel @127
-						    Parent_View 	@126
-						    location   	(2320, 1558)
+						label      	(object SegLabel @125
+						    Parent_View 	@124
+						    location   	(1967, 1898)
 						    font       	(object Font
 							size       	12
 							face       	"JetBrains Mono"
@@ -3197,22 +3157,22 @@
 						    quidu      	"5A49C4E302EE"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	786
+						    max_width  	848
 						    justify    	0
-						    label      	"Toma atención de Paciente"
-						    pctDist    	0.500488
-						    height     	43
+						    label      	"6:Toma atención de Paciente"
+						    pctDist    	0.500400
+						    height     	39
 						    orientation 	0)
 						line_color 	3342489
 						client     	@95
 						supplier   	@104
 						Focus_Src  	@97
 						Focus_Entry 	@105
-						origin     	(1439, 1600)
-						terminus   	(3200, 1600)
+						origin     	(1359, 1936)
+						terminus   	(2576, 1936)
 						ordinal    	5)
-					    (object InterMessView "Genera Receta" @128
-						location   	(16, 1952)
+					    (object InterMessView "8:Genera Receta" @126
+						location   	(16, 2368)
 						font       	(object Font
 						    size       	12
 						    face       	"JetBrains Mono"
@@ -3222,9 +3182,9 @@
 						    strike     	FALSE
 						    color      	0
 						    default_color 	TRUE)
-						label      	(object SegLabel @129
-						    Parent_View 	@128
-						    location   	(3062, 1909)
+						label      	(object SegLabel @127
+						    Parent_View 	@126
+						    location   	(2645, 2318)
 						    font       	(object Font
 							size       	12
 							face       	"JetBrains Mono"
@@ -3237,22 +3197,22 @@
 						    quidu      	"5A49C4F80272"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	414
+						    max_width  	478
 						    justify    	0
-						    label      	"Genera Receta"
-						    pctDist    	0.499765
-						    height     	44
+						    label      	"8:Genera Receta"
+						    pctDist    	0.499036
+						    height     	51
 						    orientation 	0)
 						line_color 	3342489
 						client     	@95
 						supplier   	@108
 						Focus_Src  	@99
 						Focus_Entry 	@109
-						origin     	(1439, 1952)
-						terminus   	(4688, 1952)
+						origin     	(1359, 2368)
+						terminus   	(3936, 2368)
 						ordinal    	7)
-					    (object InterMessView "Actualiza Historia Clinica del Paciente" @130
-						location   	(16, 2144)
+					    (object InterMessView "9:Actualiza Historia Clinica del Paciente" @128
+						location   	(16, 2624)
 						font       	(object Font
 						    size       	12
 						    face       	"JetBrains Mono"
@@ -3262,9 +3222,9 @@
 						    strike     	FALSE
 						    color      	0
 						    default_color 	TRUE)
-						label      	(object SegLabel @131
-						    Parent_View 	@130
-						    location   	(3427, 2102)
+						label      	(object SegLabel @129
+						    Parent_View 	@128
+						    location   	(2963, 2575)
 						    font       	(object Font
 							size       	12
 							face       	"JetBrains Mono"
@@ -3277,22 +3237,22 @@
 						    quidu      	"5A49C53501B6"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	1220
+						    max_width  	1284
 						    justify    	0
-						    label      	"Actualiza Historia Clinica del Paciente"
-						    pctDist    	0.499065
-						    height     	43
+						    label      	"9:Actualiza Historia Clinica del Paciente"
+						    pctDist    	0.503810
+						    height     	50
 						    orientation 	0)
 						line_color 	3342489
 						client     	@95
 						supplier   	@110
 						Focus_Src  	@100
 						Focus_Entry 	@111
-						origin     	(1439, 2144)
-						terminus   	(5424, 2144)
+						origin     	(1359, 2624)
+						terminus   	(4544, 2624)
 						ordinal    	8)
-					    (object InterMessView "Solicita medicamentos" @132
-						location   	(16, 2688)
+					    (object InterMessView "12:Solicita medicamentos" @130
+						location   	(16, 3264)
 						font       	(object Font
 						    size       	12
 						    face       	"JetBrains Mono"
@@ -3302,9 +3262,9 @@
 						    strike     	FALSE
 						    color      	0
 						    default_color 	TRUE)
-						label      	(object SegLabel @133
-						    Parent_View 	@132
-						    location   	(527, 2645)
+						label      	(object SegLabel @131
+						    Parent_View 	@130
+						    location   	(519, 3221)
 						    font       	(object Font
 							size       	12
 							face       	"JetBrains Mono"
@@ -3317,9 +3277,9 @@
 						    quidu      	"5A49C5BB031C"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	662
+						    max_width  	754
 						    justify    	0
-						    label      	"Solicita medicamentos"
+						    label      	"12:Solicita medicamentos"
 						    pctDist    	0.499055
 						    height     	44
 						    orientation 	0)
@@ -3328,11 +3288,11 @@
 						supplier   	@85
 						Focus_Src  	@83
 						Focus_Entry 	@93
-						origin     	(271, 2688)
-						terminus   	(784, 2688)
+						origin     	(271, 3264)
+						terminus   	(768, 3264)
 						ordinal    	11)
-					    (object InterMessView "Entregra medicamentos" @134
-						location   	(16, 2928)
+					    (object InterMessView "13:Entregra medicamentos" @132
+						location   	(16, 3552)
 						font       	(object Font
 						    size       	10
 						    face       	"JetBrains Mono"
@@ -3342,11 +3302,11 @@
 						    strike     	FALSE
 						    color      	0
 						    default_color 	TRUE)
-						label      	(object SegLabel @135
-						    Parent_View 	@134
-						    location   	(528, 2884)
+						label      	(object SegLabel @133
+						    Parent_View 	@132
+						    location   	(520, 3508)
 						    font       	(object Font
-							size       	10
+							size       	12
 							face       	"JetBrains Mono"
 							bold       	FALSE
 							italics    	FALSE
@@ -3357,9 +3317,9 @@
 						    quidu      	"5A49C5DB038A"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	525
+						    max_width  	754
 						    justify    	0
-						    label      	"Entregra medicamentos"
+						    label      	"13:Entregra medicamentos"
 						    pctDist    	0.500000
 						    height     	45
 						    orientation 	1)
@@ -3368,11 +3328,11 @@
 						supplier   	@80
 						Focus_Src  	@94
 						Focus_Entry 	@84
-						origin     	(784, 2928)
-						terminus   	(272, 2928)
+						origin     	(768, 3552)
+						terminus   	(272, 3552)
 						ordinal    	12)
-					    (object InterMessView "Entrega receta" @136
-						location   	(16, 2320)
+					    (object InterMessView "10:Entrega receta" @134
+						location   	(16, 2816)
 						font       	(object Font
 						    size       	12
 						    face       	"JetBrains Mono"
@@ -3382,9 +3342,9 @@
 						    strike     	FALSE
 						    color      	0
 						    default_color 	TRUE)
-						label      	(object SegLabel @137
-						    Parent_View 	@136
-						    location   	(3798, 2277)
+						label      	(object SegLabel @135
+						    Parent_View 	@134
+						    location   	(3262, 2773)
 						    font       	(object Font
 							size       	12
 							face       	"JetBrains Mono"
@@ -3397,9 +3357,9 @@
 						    quidu      	"5A49C76900EB"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	446
+						    max_width  	540
 						    justify    	0
-						    label      	"Entrega receta"
+						    label      	"10:Entrega receta"
 						    pctDist    	0.499846
 						    height     	44
 						    orientation 	0)
@@ -3408,13 +3368,13 @@
 						supplier   	@112
 						Focus_Src  	@101
 						Focus_Entry 	@113
-						origin     	(1439, 2320)
-						terminus   	(6160, 2320)
+						origin     	(1359, 2816)
+						terminus   	(5168, 2816)
 						ordinal    	9)
-					    (object InterMessView "Recibe receta médica" @138
-						location   	(16, 2462)
+					    (object InterMessView "11: Recibe receta médica" @136
+						location   	(16, 3008)
 						font       	(object Font
-						    size       	12
+						    size       	10
 						    face       	"JetBrains Mono"
 						    bold       	FALSE
 						    italics    	FALSE
@@ -3422,9 +3382,9 @@
 						    strike     	FALSE
 						    color      	0
 						    default_color 	TRUE)
-						label      	(object SegLabel @139
-						    Parent_View 	@138
-						    location   	(3216, 2419)
+						label      	(object SegLabel @137
+						    Parent_View 	@136
+						    location   	(2720, 2965)
 						    font       	(object Font
 							size       	12
 							face       	"JetBrains Mono"
@@ -3434,12 +3394,12 @@
 							strike     	FALSE
 							color      	0
 							default_color 	TRUE)
-						    quidu      	"5A49C78903C8"
+						    quidu      	"5B273E5302A0"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	630
+						    max_width  	756
 						    justify    	0
-						    label      	"Recibe receta médica"
+						    label      	"11: Recibe receta médica"
 						    pctDist    	0.500000
 						    height     	44
 						    orientation 	1)
@@ -3448,9 +3408,49 @@
 						supplier   	@80
 						Focus_Src  	@113
 						Focus_Entry 	@82
-						origin     	(6160, 2462)
-						terminus   	(272, 2462)
-						ordinal    	10)))
+						origin     	(5168, 3008)
+						terminus   	(272, 3008)
+						ordinal    	10)
+					    (object InterMessView "4:Busca Historia del Paciente" @138
+						location   	(16, 1456)
+						font       	(object Font
+						    size       	10
+						    face       	"JetBrains Mono"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object SegLabel @139
+						    Parent_View 	@138
+						    location   	(1366, 1413)
+						    font       	(object Font
+							size       	12
+							face       	"JetBrains Mono"
+							bold       	FALSE
+							italics    	FALSE
+							underline  	FALSE
+							strike     	FALSE
+							color      	0
+							default_color 	TRUE)
+						    quidu      	"5B273F730253"
+						    anchor_loc 	1
+						    nlines     	1
+						    max_width  	912
+						    justify    	0
+						    label      	"4:Busca Historia del Paciente"
+						    pctDist    	0.499560
+						    height     	44
+						    orientation 	0)
+						line_color 	3342489
+						client     	@85
+						supplier   	@102
+						Focus_Src  	@91
+						Focus_Entry 	@103
+						origin     	(799, 1456)
+						terminus   	(1936, 1456)
+						ordinal    	3)))
 				    (object ObjectDiagram "Diagrama de Secuencia del CUN1"
 					mechanism_ref 	@79
 					quid       	"5A49CAB502FD"
@@ -3477,7 +3477,7 @@
 						    location   	(271, 752)
 						    anchor_loc 	1
 						    nlines     	2
-						    max_width  	587
+						    max_width  	591
 						    justify    	0
 						    label      	"")
 						icon       	"Business Actor"
@@ -3538,7 +3538,7 @@
 						    location   	(1567, 1872)
 						    anchor_loc 	1
 						    nlines     	2
-						    max_width  	867
+						    max_width  	871
 						    justify    	0
 						    label      	"")
 						icon       	"Business Worker"
@@ -3553,36 +3553,7 @@
 						subobjects 	0
 						x_offset   	0.000000
 						y_offset   	0.000000)
-					    (object ObjectView "$UNNAMED$26" @143
-						location   	(2928, 368)
-						font       	(object Font
-						    size       	10
-						    face       	"JetBrains Mono"
-						    bold       	FALSE
-						    italics    	FALSE
-						    underline  	FALSE
-						    strike     	FALSE
-						    color      	0
-						    default_color 	TRUE)
-						label      	(object ItemLabel
-						    Parent_View 	@143
-						    location   	(2928, 542)
-						    anchor_loc 	1
-						    nlines     	2
-						    max_width  	957
-						    justify    	0
-						    label      	"")
-						icon       	"Business Entity"
-						icon_style 	"Icon"
-						line_color 	3342489
-						fill_color 	13434879
-						quidu      	"5A49C3590399"
-						annotation 	4
-						autoResize 	TRUE
-						subobjects 	0
-						x_offset   	0.000000
-						y_offset   	0.000000)
-					    (object ObjectView "$UNNAMED$28" @144
+					    (object ObjectView "$UNNAMED$28" @143
 						location   	(2944, 1536)
 						font       	(object Font
 						    size       	10
@@ -3594,11 +3565,11 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@144
+						    Parent_View 	@143
 						    location   	(2944, 1710)
 						    anchor_loc 	1
 						    nlines     	2
-						    max_width  	957
+						    max_width  	757
 						    justify    	0
 						    label      	"")
 						icon       	"Business Entity"
@@ -3611,7 +3582,7 @@
 						subobjects 	0
 						x_offset   	0.000000
 						y_offset   	0.000000)
-					    (object ObjectView "$UNNAMED$27" @145
+					    (object ObjectView "$UNNAMED$27" @144
 						location   	(2944, 896)
 						font       	(object Font
 						    size       	10
@@ -3623,11 +3594,11 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@145
+						    Parent_View 	@144
 						    location   	(2944, 1070)
 						    anchor_loc 	1
 						    nlines     	2
-						    max_width  	957
+						    max_width  	757
 						    justify    	0
 						    label      	"")
 						icon       	"Business Entity"
@@ -3640,7 +3611,7 @@
 						subobjects 	0
 						x_offset   	0.000000
 						y_offset   	0.000000)
-					    (object ObjectView "$UNNAMED$29" @146
+					    (object ObjectView "$UNNAMED$29" @145
 						location   	(2576, 2096)
 						font       	(object Font
 						    size       	10
@@ -3652,11 +3623,11 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@146
+						    Parent_View 	@145
 						    location   	(2576, 2270)
 						    anchor_loc 	1
 						    nlines     	2
-						    max_width  	957
+						    max_width  	757
 						    justify    	0
 						    label      	"")
 						icon       	"Business Entity"
@@ -3669,7 +3640,7 @@
 						subobjects 	0
 						x_offset   	0.000000
 						y_offset   	0.000000)
-					    (object ObjectView "$UNNAMED$30" @147
+					    (object ObjectView "$UNNAMED$30" @146
 						location   	(352, 2064)
 						font       	(object Font
 						    size       	10
@@ -3681,11 +3652,11 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@147
+						    Parent_View 	@146
 						    location   	(352, 2238)
 						    anchor_loc 	1
 						    nlines     	2
-						    max_width  	957
+						    max_width  	757
 						    justify    	0
 						    label      	"")
 						icon       	"Business Entity"
@@ -3698,7 +3669,7 @@
 						subobjects 	0
 						x_offset   	0.000000
 						y_offset   	0.000000)
-					    (object ObjectView "$UNNAMED$31" @148
+					    (object ObjectView "$UNNAMED$31" @147
 						location   	(512, 1456)
 						font       	(object Font
 						    size       	10
@@ -3710,11 +3681,11 @@
 						    color      	0
 						    default_color 	TRUE)
 						label      	(object ItemLabel
-						    Parent_View 	@148
+						    Parent_View 	@147
 						    location   	(512, 1630)
 						    anchor_loc 	1
 						    nlines     	2
-						    max_width  	957
+						    max_width  	757
 						    justify    	0
 						    label      	"")
 						icon       	"Business Entity"
@@ -3727,7 +3698,7 @@
 						subobjects 	0
 						x_offset   	0.000000
 						y_offset   	0.000000)
-					    (object LinkSelfView "" @149
+					    (object LinkSelfView "" @148
 						location   	(272, 261)
 						stereotype 	TRUE
 						line_color 	3342489
@@ -3738,7 +3709,7 @@
 						    (214, 416)
 						    (324, 416))
 						line_style 	4)
-					    (object LinkSelfView "" @150
+					    (object LinkSelfView "" @149
 						location   	(1568, 245)
 						stereotype 	TRUE
 						line_color 	3342489
@@ -3749,7 +3720,7 @@
 						    (1510, 400)
 						    (1620, 400))
 						line_style 	4)
-					    (object MessView "" @151
+					    (object MessView "" @150
 						location   	(1568, 201)
 						font       	(object Font
 						    size       	10
@@ -3761,8 +3732,8 @@
 						    color      	0
 						    default_color 	TRUE)
 						line_color 	3342489
-						label      	(object SegLabel @152
-						    Parent_View 	@151
+						label      	(object SegLabel @151
+						    Parent_View 	@150
 						    location   	(1568, 110)
 						    font       	(object Font
 							size       	10
@@ -3776,14 +3747,14 @@
 						    quidu      	"5A49C0A3029F"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	662
+						    max_width  	700
 						    justify    	0
-						    label      	"Recepciona DNI Paciente"
+						    label      	"2:Recepciona DNI Paciente"
 						    pctDist    	0.500000
 						    height     	45
 						    orientation 	0)
-						label      	(object SegLabel @153
-						    Parent_View 	@151
+						label      	(object SegLabel @152
+						    Parent_View 	@150
 						    location   	(1568, 157)
 						    font       	(object Font
 							size       	10
@@ -3797,19 +3768,48 @@
 						    quidu      	"5A49C8DC02DE"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	736
+						    max_width  	775
 						    justify    	0
-						    label      	"Verifica registro Paciente"
+						    label      	"3:Verifica registro Paciente"
 						    pctDist    	0.500000
 						    height     	45
 						    orientation 	0)
-						object_arc 	@150
+						object_arc 	@149
 						pctDist    	0.500000
 						height     	45
 						orientation 	0
 						dir        	1
 						origin     	(1508, 201)
 						terminus   	(1628, 201))
+					    (object ObjectView "$UNNAMED$26" @153
+						location   	(3376, 384)
+						font       	(object Font
+						    size       	10
+						    face       	"JetBrains Mono"
+						    bold       	FALSE
+						    italics    	FALSE
+						    underline  	FALSE
+						    strike     	FALSE
+						    color      	0
+						    default_color 	TRUE)
+						label      	(object ItemLabel
+						    Parent_View 	@153
+						    location   	(3376, 558)
+						    anchor_loc 	1
+						    nlines     	2
+						    max_width  	757
+						    justify    	0
+						    label      	"")
+						icon       	"Business Entity"
+						icon_style 	"Icon"
+						line_color 	3342489
+						fill_color 	13434879
+						quidu      	"5B273F4B0233"
+						annotation 	4
+						autoResize 	TRUE
+						subobjects 	0
+						x_offset   	0.000000
+						y_offset   	0.000000)
 					    (object LinkView "" @154
 						stereotype 	TRUE
 						line_color 	3342489
@@ -3847,9 +3847,9 @@
 						    quidu      	"5A49C87101F5"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	612
+						    max_width  	650
 						    justify    	0
-						    label      	"Entrega documento DNI"
+						    label      	"1:Entrega documento DNI"
 						    pctDist    	0.500000
 						    height     	45
 						    orientation 	0)
@@ -3868,9 +3868,9 @@
 						    quidu      	"5A49C5BB031C"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	636
+						    max_width  	700
 						    justify    	0
-						    label      	"Solicita medicamentos"
+						    label      	"12:Solicita medicamentos"
 						    pctDist    	0.500000
 						    height     	45
 						    orientation 	0)
@@ -3908,9 +3908,9 @@
 						    quidu      	"5A49C5DB038A"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	625
+						    max_width  	700
 						    justify    	0
-						    label      	"Entregra medicamentos"
+						    label      	"13:Entregra medicamentos"
 						    pctDist    	0.500000
 						    height     	45
 						    orientation 	0)
@@ -3958,9 +3958,9 @@
 						    quidu      	"5A49C96F0197"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	986
+						    max_width  	1025
 						    justify    	0
-						    label      	"Deriva Historia Clinica del Paciente"
+						    label      	"5:Deriva Historia Clinica del Paciente"
 						    pctDist    	0.500000
 						    height     	45
 						    orientation 	0)
@@ -3974,15 +3974,15 @@
 					    (object LinkView "" @163
 						stereotype 	TRUE
 						line_color 	3342489
-						quidu      	"5A49C365036B"
+						quidu      	"5B273F730252"
 						client     	@141
-						supplier   	@143
+						supplier   	@153
 						vertices   	(list Points
-						    (1711, 521)
-						    (2798, 382))
+						    (1711, 526)
+						    (3246, 393))
 						line_style 	0)
 					    (object MessView "" @164
-						location   	(2250, 407)
+						location   	(2476, 415)
 						font       	(object Font
 						    size       	10
 						    face       	"JetBrains Mono"
@@ -3995,7 +3995,7 @@
 						line_color 	3342489
 						label      	(object SegLabel @165
 						    Parent_View 	@164
-						    location   	(2246, 363)
+						    location   	(2474, 371)
 						    font       	(object Font
 							size       	10
 							face       	"JetBrains Mono"
@@ -4005,12 +4005,12 @@
 							strike     	FALSE
 							color      	0
 							default_color 	TRUE)
-						    quidu      	"5A49C365036C"
+						    quidu      	"5B273F730253"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	762
+						    max_width  	810
 						    justify    	0
-						    label      	"Busca Historia del Paciente"
+						    label      	"4:Busca Historia del Paciente"
 						    pctDist    	0.500000
 						    height     	45
 						    orientation 	0)
@@ -4019,14 +4019,14 @@
 						height     	45
 						orientation 	0
 						dir        	1
-						origin     	(2190, 414)
-						terminus   	(2310, 400))
+						origin     	(2416, 419)
+						terminus   	(2536, 411))
 					    (object LinkView "" @166
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"5A49C3B6005D"
 						client     	@142
-						supplier   	@145
+						supplier   	@144
 						vertices   	(list Points
 						    (1711, 1564)
 						    (2813, 964))
@@ -4058,9 +4058,9 @@
 						    quidu      	"5A49C4E302EE"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	712
+						    max_width  	750
 						    justify    	0
-						    label      	"Toma atención de Paciente"
+						    label      	"6:Toma atención de Paciente"
 						    pctDist    	0.500000
 						    height     	45
 						    orientation 	0)
@@ -4076,7 +4076,7 @@
 						line_color 	3342489
 						quidu      	"5A49C41C037A"
 						client     	@142
-						supplier   	@144
+						supplier   	@143
 						vertices   	(list Points
 						    (1711, 1632)
 						    (2813, 1544))
@@ -4108,9 +4108,9 @@
 						    quidu      	"5A49C4CA0232"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	836
+						    max_width  	875
 						    justify    	0
-						    label      	"Registra consulta del Paciente"
+						    label      	"7:Registra consulta del Paciente"
 						    pctDist    	0.500000
 						    height     	45
 						    orientation 	0)
@@ -4126,7 +4126,7 @@
 						line_color 	3342489
 						quidu      	"5A49C4F80271"
 						client     	@142
-						supplier   	@146
+						supplier   	@145
 						vertices   	(list Points
 						    (1711, 1709)
 						    (2446, 2036))
@@ -4158,9 +4158,9 @@
 						    quidu      	"5A49C4F80272"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	412
+						    max_width  	450
 						    justify    	0
-						    label      	"Genera Receta"
+						    label      	"8:Genera Receta"
 						    pctDist    	0.500000
 						    height     	45
 						    orientation 	0)
@@ -4176,7 +4176,7 @@
 						line_color 	3342489
 						quidu      	"5A49C53501B5"
 						client     	@142
-						supplier   	@147
+						supplier   	@146
 						vertices   	(list Points
 						    (1421, 1693)
 						    (480, 2017))
@@ -4208,9 +4208,9 @@
 						    quidu      	"5A49C53501B6"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	1062
+						    max_width  	1100
 						    justify    	0
-						    label      	"Actualiza Historia Clinica del Paciente"
+						    label      	"9:Actualiza Historia Clinica del Paciente"
 						    pctDist    	0.500000
 						    height     	45
 						    orientation 	0)
@@ -4236,7 +4236,7 @@
 						line_color 	3342489
 						quidu      	"5A49C76900EA"
 						client     	@142
-						supplier   	@148
+						supplier   	@147
 						vertices   	(list Points
 						    (1423, 1617)
 						    (640, 1476))
@@ -4268,9 +4268,9 @@
 						    quidu      	"5A49C76900EB"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	462
+						    max_width  	525
 						    justify    	0
-						    label      	"Entrega receta"
+						    label      	"10:Entrega receta"
 						    pctDist    	0.500000
 						    height     	45
 						    orientation 	0)
@@ -4285,7 +4285,7 @@
 						stereotype 	TRUE
 						line_color 	3342489
 						quidu      	"5A49C77A006D"
-						client     	@148
+						client     	@147
 						supplier   	@140
 						vertices   	(list Points
 						    (483, 1362)
@@ -4315,12 +4315,12 @@
 							strike     	FALSE
 							color      	0
 							default_color 	TRUE)
-						    quidu      	"5A49C78903C8"
+						    quidu      	"5B273E5302A0"
 						    anchor_loc 	1
 						    nlines     	1
-						    max_width  	600
+						    max_width  	700
 						    justify    	0
-						    label      	"Recibe receta médica"
+						    label      	"11: Recibe receta médica"
 						    pctDist    	0.500000
 						    height     	45
 						    orientation 	0)
@@ -4648,7 +4648,7 @@
 					supplier   	@187
 					vertices   	(list Points
 					    (2752, 596)
-					    (2752, 478))
+					    (2752, 445))
 					line_style 	0)
 				    (object UsesView "" @195
 					font       	(object Font
@@ -4667,7 +4667,7 @@
 					supplier   	@186
 					vertices   	(list Points
 					    (2752, 1234)
-					    (2752, 990))
+					    (2752, 957))
 					line_style 	0)
 				    (object UsesView "" @196
 					font       	(object Font
@@ -4686,7 +4686,7 @@
 					supplier   	@190
 					vertices   	(list Points
 					    (2752, 1748)
-					    (2752, 1630))
+					    (2752, 1597))
 					line_style 	0)))))
 		    (object Class_Category "Realizacion  CUN"
 			quid       	"5B27435500CB"
@@ -4842,7 +4842,110 @@
 				height     	290
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Use Case View::Modelado del Negocio::Actores del Negocio::AN1_Paciente" @202
+			    (object UseCaseView "Use Case View::Modelado del Negocio::CUN::CUN1_Gestion de Formatos de Registros Clinicos de Usuarios" @202
+				location   	(1568, 1088)
+				font       	(object Font
+				    size       	10
+				    face       	"JetBrains Mono"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@202
+				    location   	(1567, 1263)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	879
+				    justify    	0
+				    label      	"CUN1_Gestion de Formatos de Registros Clinicos de Usuarios")
+				icon       	"Business Use Case"
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"5B27DC1501B6"
+				width      	306)
+			    (object AssociationViewNew "$UNNAMED$0" @203
+				location   	(2034, 931)
+				font       	(object Font
+				    size       	10
+				    face       	"JetBrains Mono"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5B27DC290213"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$1" @204
+					Parent_View 	@203
+					location   	(-478, 563)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"5B27DC2A00DB"
+					client     	@203
+					supplier   	@202
+					vertices   	(list Points
+					    (2034, 931)
+					    (1718, 1034))
+					line_style 	0)
+				    (object RoleView "$UNNAMED$2" @205
+					Parent_View 	@203
+					location   	(-478, 563)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"5B27DC2A00EB"
+					client     	@203
+					supplier   	@200
+					vertices   	(list Points
+					    (2034, 931)
+					    (2350, 828))
+					line_style 	0)))
+			    (object AssociationViewNew "$UNNAMED$3" @206
+				location   	(2034, 1206)
+				font       	(object Font
+				    size       	10
+				    face       	"JetBrains Mono"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5B27DC2B0262"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$4" @207
+					Parent_View 	@206
+					location   	(-510, -522)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"5B27DC2C01B6"
+					client     	@206
+					supplier   	@202
+					vertices   	(list Points
+					    (2034, 1206)
+					    (1718, 1124))
+					line_style 	0)
+				    (object RoleView "$UNNAMED$5" @208
+					Parent_View 	@206
+					location   	(-510, -522)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"5B27DC2C01B8"
+					client     	@206
+					supplier   	@201
+					vertices   	(list Points
+					    (2034, 1206)
+					    (2350, 1287))
+					line_style 	0)))
+			    (object ClassView "Class" "Use Case View::Modelado del Negocio::Actores del Negocio::AN1_Paciente" @209
 				ShowCompartmentStereotypes 	TRUE
 				SuppressAttribute 	TRUE
 				SuppressOperation 	TRUE
@@ -4859,7 +4962,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@202
+				    Parent_View 	@209
 				    location   	(623, 1296)
 				    anchor_loc 	1
 				    nlines     	2
@@ -4874,109 +4977,6 @@
 				width      	202
 				annotation 	8
 				autoResize 	TRUE)
-			    (object UseCaseView "Use Case View::Modelado del Negocio::CUN::CUN1_Gestion de Formatos de Registros Clinicos de Usuarios" @203
-				location   	(1568, 1088)
-				font       	(object Font
-				    size       	10
-				    face       	"JetBrains Mono"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@203
-				    location   	(1567, 1263)
-				    anchor_loc 	1
-				    nlines     	2
-				    max_width  	879
-				    justify    	0
-				    label      	"CUN1_Gestion de Formatos de Registros Clinicos de Usuarios")
-				icon       	"Business Use Case"
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"5B27DC1501B6"
-				width      	306)
-			    (object AssociationViewNew "$UNNAMED$0" @204
-				location   	(2034, 931)
-				font       	(object Font
-				    size       	10
-				    face       	"JetBrains Mono"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				stereotype 	TRUE
-				line_color 	3342489
-				quidu      	"5B27DC290213"
-				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$1" @205
-					Parent_View 	@204
-					location   	(-478, 563)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"5B27DC2A00DB"
-					client     	@204
-					supplier   	@203
-					vertices   	(list Points
-					    (2034, 931)
-					    (1718, 1036))
-					line_style 	0)
-				    (object RoleView "$UNNAMED$2" @206
-					Parent_View 	@204
-					location   	(-478, 563)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"5B27DC2A00EB"
-					client     	@204
-					supplier   	@200
-					vertices   	(list Points
-					    (2034, 931)
-					    (2351, 826))
-					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$3" @207
-				location   	(2034, 1206)
-				font       	(object Font
-				    size       	10
-				    face       	"JetBrains Mono"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				stereotype 	TRUE
-				line_color 	3342489
-				quidu      	"5B27DC2B0262"
-				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$4" @208
-					Parent_View 	@207
-					location   	(-510, -522)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"5B27DC2C01B6"
-					client     	@207
-					supplier   	@203
-					vertices   	(list Points
-					    (2034, 1206)
-					    (1718, 1125))
-					line_style 	0)
-				    (object RoleView "$UNNAMED$5" @209
-					Parent_View 	@207
-					location   	(-510, -522)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"5B27DC2C01B8"
-					client     	@207
-					supplier   	@201
-					vertices   	(list Points
-					    (2034, 1206)
-					    (2351, 1287))
-					line_style 	0)))
 			    (object AssociationViewNew "$UNNAMED$6" @210
 				location   	(1068, 1088)
 				font       	(object Font
@@ -4999,10 +4999,10 @@
 					line_color 	3342489
 					quidu      	"5A49C2630223"
 					client     	@210
-					supplier   	@203
+					supplier   	@202
 					vertices   	(list Points
 					    (1068, 1088)
-					    (1415, 1088))
+					    (1416, 1088))
 					line_style 	0)
 				    (object RoleView "$UNNAMED$8" @212
 					Parent_View 	@210
@@ -5011,7 +5011,7 @@
 					line_color 	3342489
 					quidu      	"5A49C2630232"
 					client     	@210
-					supplier   	@202
+					supplier   	@209
 					vertices   	(list Points
 					    (1068, 1088)
 					    (722, 1088))
@@ -5585,7 +5585,17 @@
 					vertices   	(list Points
 					    (868, 976)
 					    (1154, 976))
-					line_style 	0))))))))
+					line_style 	0)))))))
+	    (object Class_Category "Modelado del Sistema"
+		quid       	"5B2740B6004E"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list
+		    (object Class_Category "Actores del Sistema"
+			quid       	"5B2740C60187"
+			exportControl 	"Public"
+			logical_models 	(list unit_reference_list)
+			logical_presentations 	(list unit_reference_list)))
+		logical_presentations 	(list unit_reference_list)))
 	logical_presentations 	(list unit_reference_list
 	    (object UseCaseDiagram "Main"
 		quid       	"35C6339B029F"
